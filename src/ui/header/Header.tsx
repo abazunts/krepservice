@@ -9,6 +9,7 @@ const styles = createStyles({
         borderTop: '5px solid #f94836',
         height: '10vh',
         minHeight: 94,
+        background: 'white',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-start',
