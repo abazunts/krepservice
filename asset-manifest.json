@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/krepservice/static/css/main.1e4fea12.chunk.css",
+    "main.js": "/krepservice/static/js/main.c5def64a.chunk.js",
+    "main.js.map": "/krepservice/static/js/main.c5def64a.chunk.js.map",
+    "runtime-main.js": "/krepservice/static/js/runtime-main.734c0928.js",
+    "runtime-main.js.map": "/krepservice/static/js/runtime-main.734c0928.js.map",
+    "static/css/2.4b6e3ef2.chunk.css": "/krepservice/static/css/2.4b6e3ef2.chunk.css",
+    "static/js/2.7d69062b.chunk.js": "/krepservice/static/js/2.7d69062b.chunk.js",
+    "static/js/2.7d69062b.chunk.js.map": "/krepservice/static/js/2.7d69062b.chunk.js.map",
+    "index.html": "/krepservice/index.html",
+    "precache-manifest.549dd5db776e0e47f98013ba38cf96c1.js": "/krepservice/precache-manifest.549dd5db776e0e47f98013ba38cf96c1.js",
+    "service-worker.js": "/krepservice/service-worker.js",
+    "static/css/2.4b6e3ef2.chunk.css.map": "/krepservice/static/css/2.4b6e3ef2.chunk.css.map",
+    "static/css/main.1e4fea12.chunk.css.map": "/krepservice/static/css/main.1e4fea12.chunk.css.map",
+    "static/js/2.7d69062b.chunk.js.LICENSE.txt": "/krepservice/static/js/2.7d69062b.chunk.js.LICENSE.txt",
+    "static/media/krep.png": "/krepservice/static/media/krep.e3c4feb3.png",
+    "static/media/krep1.png": "/krepservice/static/media/krep1.7f2ac77c.png",
+    "static/media/logo-white.png": "/krepservice/static/media/logo-white.91cc6532.png",
+    "static/media/whatsapp.png": "/krepservice/static/media/whatsapp.0d6ce701.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.734c0928.js",
+    "static/css/2.4b6e3ef2.chunk.css",
+    "static/js/2.7d69062b.chunk.js",
+    "static/css/main.1e4fea12.chunk.css",
+    "static/js/main.c5def64a.chunk.js"
+  ]
+}
