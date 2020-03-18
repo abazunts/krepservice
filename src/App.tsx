@@ -52,7 +52,7 @@ const App: FC<IProps> = ({classes}) => {
                 <Header/>
             </div>
             <div className={classes.wrapperContent}>
-                <Route exact path={'/'} render={() => <div><ProductCard/><ProductCard/><ProductCard/><ProductCard/></div>}/>
+                <Route exact path={'/'} render={() => <div><ProductCard/></div>}/>
                 <Route path={'/about'} render={() => <div>О компании</div>}/>
                 <Route path={'/price'} render={() => <div>Продукция</div>}/>
                 <Route path={'/contacts'} render={() => <div>Контакты</div>}/>

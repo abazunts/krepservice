@@ -65,7 +65,8 @@ const styles = createStyles({
     phone: {
         position: 'relative',
         color: 'black',
-        fontSize: 14,
+        fontSize: 12,
+        fontWeight: 600,
         marginRight: '1%',
     },
     date: {
@@ -186,7 +187,11 @@ const Header: FC<IProps> = ({classes}) => {
             </div>
             <div className={classes.wrapperPhone}>
                 <div className={classes.information}>
-                    <PhoneIcon style={{color: '#f94836', marginRight: 10}}/><span className={classes.phone}>8 702 792 70 02 / 8 701 022 60 02 / 29 84 75 / 29 04 64</span>
+                    <PhoneIcon style={{color: '#f94836', marginRight: 10}}/>
+                    <div style={{display: 'flex', flexDirection: 'column',  minWidth: 400}}>
+                        <span className={classes.phone}>8 702 792 70 02 / 8 701 022 60 02</span>
+                        <span className={classes.phone}> 8 7122 29 84 75 / 8 7122 29 04 64</span>
+                    </div>
                 </div>
                 <div className={classes.information}>
                     <QueryBuilderIcon style={{color: '#f94836', marginRight: 10}}/><span className={classes.date}>Пн–Пт 09:00–18:00, Сб 10:00–16:00</span>
