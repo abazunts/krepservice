@@ -20,6 +20,7 @@ const styles = createStyles({
         alignItems: 'center',
         justifyContent: 'flex-start',
         flexWrap: 'nowrap',
+        boxShadow: 'inset -5px -8px 10px 1px rgba(0,0,0,0.30)',
         "&:before": {
             content: "''",
             right: 0,
@@ -53,7 +54,7 @@ const styles = createStyles({
         height: '8vh',
         minHeight: 70,
         zIndex: 9999,
-        boxShadow: '0px -2px 10px 1px rgba(0,0,0,0.80)',
+
     },
     menuWrapper: {
         marginRight: '5%',
@@ -96,6 +97,7 @@ const styles = createStyles({
     wrapperLogo: {
         zIndex: 999,
         marginLeft: '10%',
+        marginBottom: 10,
         ['@media (max-width:980px)']: {
             marginLeft: 10
         }
