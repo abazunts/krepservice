@@ -111,19 +111,25 @@ const styles = createStyles({
         width: 15,
         position: 'absolute',
         left: 10,
-        top: 10
+        top: 10,
+        borderRadius: '7px',
+        border: '1px solid black',
     },
     x2: {
         width: 15,
         position: 'absolute',
         left: 10,
-        top: 65
+        top: 65,
+        borderRadius: '7px',
+        border: '1px solid black',
     },
     x3: {
         width: 15,
         position: 'absolute',
         left: '34%',
         top: 65,
+        borderRadius: '7px',
+        border: '1px solid black',
         ['@media (max-width:1457px)']: {
             left: '44%',
         },
@@ -137,6 +143,9 @@ const styles = createStyles({
         position: 'absolute',
         left: '36%',
         top: 10,
+        borderRadius: '7px',
+        border: '1px solid black',
+        // boxShadow: ' 0px 0px 0px 3px rgba(0,0,0,0.75)',
         ['@media (max-width:1457px)']: {
             left: '46.5%',
         },
