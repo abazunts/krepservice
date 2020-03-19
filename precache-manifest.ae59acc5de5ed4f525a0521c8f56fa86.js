@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2e66c04fecc8924e9c772d24d622157",
+    "revision": "152c670ef31abeaf54360bc3a16e6aa1",
     "url": "/krepservice/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/krepservice/static/css/2.4b6e3ef2.chunk.css"
   },
   {
-    "revision": "f359381593b60fb87867",
-    "url": "/krepservice/static/css/main.1e4fea12.chunk.css"
+    "revision": "bddda33e119ff44404bd",
+    "url": "/krepservice/static/css/main.41570230.chunk.css"
   },
   {
     "revision": "2bbca17be32a439195ef",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/krepservice/static/js/2.7d69062b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f359381593b60fb87867",
-    "url": "/krepservice/static/js/main.c5def64a.chunk.js"
+    "revision": "bddda33e119ff44404bd",
+    "url": "/krepservice/static/js/main.9e9bad5a.chunk.js"
   },
   {
     "revision": "742dcf948bc05bec8d41",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/krepservice/static/media/krep1.7f2ac77c.png"
   },
   {
-    "revision": "91cc6532f6a91ceae108db11dcfac598",
-    "url": "/krepservice/static/media/logo-white.91cc6532.png"
+    "revision": "3a43301360aebcd36cafda5fbfdf6184",
+    "url": "/krepservice/static/media/logo-white.3a433013.png"
   },
   {
     "revision": "0d6ce701d384958403804b814207a431",
