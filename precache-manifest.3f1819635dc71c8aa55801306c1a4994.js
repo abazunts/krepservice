@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "152c670ef31abeaf54360bc3a16e6aa1",
+    "revision": "55acdaba66fe4c76bbb05615eaff576b",
     "url": "/krepservice/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/krepservice/static/css/2.4b6e3ef2.chunk.css"
   },
   {
-    "revision": "bddda33e119ff44404bd",
+    "revision": "e9d6e7f52c9bd8925d7a",
     "url": "/krepservice/static/css/main.41570230.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/krepservice/static/js/2.7d69062b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bddda33e119ff44404bd",
-    "url": "/krepservice/static/js/main.9e9bad5a.chunk.js"
+    "revision": "e9d6e7f52c9bd8925d7a",
+    "url": "/krepservice/static/js/main.bec4bc49.chunk.js"
   },
   {
     "revision": "742dcf948bc05bec8d41",
