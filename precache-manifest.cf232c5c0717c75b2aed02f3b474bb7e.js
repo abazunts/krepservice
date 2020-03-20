@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2dd67b720a68c1df74669f5fa16b637",
+    "revision": "ce2192f066b6ceedd555422c7da3e878",
     "url": "/krepservice/index.html"
   },
   {
-    "revision": "2bbca17be32a439195ef",
+    "revision": "cfe7098502bedf61972e",
     "url": "/krepservice/static/css/2.4b6e3ef2.chunk.css"
   },
   {
-    "revision": "53560858fd4d1a50b37a",
+    "revision": "6f317d844d32e652373c",
     "url": "/krepservice/static/css/main.1e4fea12.chunk.css"
   },
   {
-    "revision": "2bbca17be32a439195ef",
-    "url": "/krepservice/static/js/2.7d69062b.chunk.js"
+    "revision": "cfe7098502bedf61972e",
+    "url": "/krepservice/static/js/2.65666aea.chunk.js"
   },
   {
     "revision": "c099810c3c102db7a44755001529c804",
-    "url": "/krepservice/static/js/2.7d69062b.chunk.js.LICENSE.txt"
+    "url": "/krepservice/static/js/2.65666aea.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53560858fd4d1a50b37a",
-    "url": "/krepservice/static/js/main.80679f6c.chunk.js"
+    "revision": "6f317d844d32e652373c",
+    "url": "/krepservice/static/js/main.ccbf5fc4.chunk.js"
   },
   {
     "revision": "742dcf948bc05bec8d41",
