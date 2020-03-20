@@ -3,8 +3,8 @@ import {createStyles, withStyles, WithStyles} from "@material-ui/core";
 import phone from '../../assets/icon/phone.png'
 import email from '../../assets/icon/email.png'
 import mobile from '../../assets/icon/mobile.png'
-import address from '../../assets/icon/address.png'
 import whatsapp from '../../assets/icon/whatsapp.png'
+import {color} from "../../constants-style";
 
 const styles = createStyles({
     root: {
@@ -35,7 +35,7 @@ const styles = createStyles({
         marginRight: 10,
         cursor: 'pointer',
         "&:hover": {
-            color: '#f94836'
+            color: color.brandColor
         }
     }
 });

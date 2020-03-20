@@ -12,6 +12,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import DomainIcon from '@material-ui/icons/Domain';
 import InfoIcon from '@material-ui/icons/Info';
+import {color} from "../../constants-style";
 
 const useStyles = makeStyles({
     list: {
@@ -63,7 +64,7 @@ const MainMenuPanel = () => {
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
-            style={{background: '#f94836', color: 'white', opacity: '0.9'}}
+            style={{background: color.brandColor, color: 'white', opacity: '0.9'}}
         >
             <List>
                 {mainMenu.map((text, index) => {
@@ -106,7 +107,7 @@ const MainMenuPanel = () => {
         <div>
             <React.Fragment key={'left'}>
                 <MenuIcon onClick={toggleDrawer('left', true)} fontSize={'large'} style={{color: "white"}}/>
-                <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
+                <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)} >
                     {list('left')}
                 </Drawer>
             </React.Fragment>

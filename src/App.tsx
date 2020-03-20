@@ -7,6 +7,7 @@ import ProductCard from "./ui/product-card/ProductCard";
 import Footer from "./ui/footer/Footer";
 import MainMenu from "./ui/main-menu/MainMenu";
 import MainMenuPanel from "./ui/main-menu/MainMenuPanel";
+import {color} from "./constants-style";
 
 const styles = createStyles({
     root: {
@@ -36,8 +37,8 @@ const styles = createStyles({
     },
     footer: {
         minHeight: 200,
-        borderTop: '3px solid #f94836',
-        background: '#393f4b',
+        borderTop: `3px solid ${color.brandColor}`,
+        background: color.baseColor,
         width: '100%',
         boxShadow: 'inset 0px 0px 5px 3px rgba(0,0,0,0.46)'
     }

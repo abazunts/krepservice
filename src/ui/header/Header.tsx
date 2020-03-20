@@ -10,13 +10,14 @@ import krep1 from '../../assets/img/krep1.png'
 import {NavLink} from "react-router-dom";
 import MainMenuPanel from "../main-menu/MainMenuPanel";
 import whatsapp from "../../assets/icon/whatsapp.png";
+import {color} from "../../constants-style";
 
 const styles = createStyles({
     headerCenter: {
-        borderTop: '5px solid #f94836',
+        borderTop: `5px solid ${color.brandColor}`,
         height: '10vh',
         minHeight: 94,
-        background: '#f94836',
+        background: color.brandColor,
         zIndex: 999,
         display: 'flex',
         alignItems: 'center',
@@ -26,7 +27,7 @@ const styles = createStyles({
         "&:before": {
             content: "''",
             right: 0,
-            borderBottom: '89px solid #F7F7F7',
+            borderBottom: `89px solid ${color.helpColor}`,
             borderLeft: '60px solid transparent',
             borderRight: '0px solid transparent',
             height: '20px',
@@ -46,7 +47,7 @@ const styles = createStyles({
         display: 'flex',
         justifyContent: 'flex-end',
         alignItems: 'stretch',
-        background: '#393f4b',
+        background: color.baseColor,
         height: '8vh',
         minHeight: 70,
         zIndex: 9999,
@@ -64,7 +65,7 @@ const styles = createStyles({
     menuWrapperPanel: {
         position: 'relative',
         justifyContent: 'flex-start',
-        background: '#393f4b',
+        background: color.baseColor,
         height: 40,
         zIndex: 9999,
         display: 'none',
@@ -237,14 +238,14 @@ const Header: FC<IProps> = ({classes}) => {
             </div>
             <div className={classes.wrapperPhone}>
                 <div className={classes.information}>
-                    <PhoneIcon style={{color: '#f94836', marginRight: 10}}/>
+                    <PhoneIcon style={{color: color.brandColor, marginRight: 10}}/>
                     <div style={{display: 'flex', flexDirection: 'column', minWidth: 400}}>
                         <span className={classes.phone}>8 702 792 70 02 / 8 701 022 60 02</span>
                         <span className={classes.phone}> 8 7122 29 84 75 / 8 7122 29 04 64</span>
                     </div>
                 </div>
                 <div className={classes.information}>
-                    <QueryBuilderIcon style={{color: '#f94836', marginRight: 10}}/><span className={classes.date}>Пн–Пт 09:00–18:00, Сб 10:00–16:00</span>
+                    <QueryBuilderIcon style={{color: color.brandColor, marginRight: 10}}/><span className={classes.date}>Пн–Пт 09:00–18:00, Сб 10:00–16:00</span>
                 </div>
             </div>
             <img src={krep1} className={classes.krep1}/>
@@ -254,7 +255,7 @@ const Header: FC<IProps> = ({classes}) => {
             <MainMenuPanel/>
             <div className={classes.wrapperContacts}>
                 <a href={'tel:+77027927002'}>
-                    <PhoneIcon style={{color: '#f94836', marginRight: 10, marginLeft: 10}}/>
+                    <PhoneIcon style={{color: color.brandColor, marginRight: 10, marginLeft: 10}}/>
                     <span className={classes.phoneInPanel}>Позвонить</span>
                 </a>
                 <a href={"https://wa.me/77027927002"} target={'_blank'}>

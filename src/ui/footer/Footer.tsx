@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {createStyles, withStyles, WithStyles} from "@material-ui/core";
 import Contacts from "./Contacts";
 import WorkingSchedule from "./WorkingSchedule";
+import {color} from "../../constants-style";
 
 const styles = createStyles({
     root: {
@@ -15,7 +16,7 @@ const styles = createStyles({
         color: 'white',
         opacity: '0.6',
         fontSize: 12,
-        borderTop: '1px solid #f94836',
+        borderTop: `1px solid ${color.brandColor}`,
         paddingTop: 10,
         width: '50%',
         textAlign: 'center'
