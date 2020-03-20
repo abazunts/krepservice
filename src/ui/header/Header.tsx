@@ -31,13 +31,7 @@ const styles = createStyles({
             position: 'fixed',
             width: '65%',
         },
-        ['@media (max-width:1457px)']: {
-            justifyContent: 'center',
-            "&:before": {
-                width: '55%',
-            },
-        },
-        ['@media (max-width:768px)']: {
+        ['@media (max-width:820px)']: {
             justifyContent: 'center',
             "&:before": {
                 width: '0%',
@@ -76,14 +70,15 @@ const styles = createStyles({
         marginRight: '1%',
     },
     wrapperPhone: {
+        width: '65%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         zIndex: 999,
         minWidth: 450,
-        marginLeft: '15%',
-        ['@media (max-width:768px)']: {
+        // marginLeft: '15%',
+        ['@media (max-width:820px)']: {
             display: 'none'
         }
     },
@@ -96,16 +91,30 @@ const styles = createStyles({
         marginLeft: '10%',
     },
     wrapperLogo: {
+        width: '37%',
+        textAlign: 'center',
+
         zIndex: 999,
-        marginLeft: '10%',
         marginBottom: 10,
-        ['@media (max-width:980px)']: {
-            marginLeft: 10
+        ['@media (max-width:1000px)']: {
+            width: '40%',
+        },
+        ['@media (max-width:820px)']: {
+            width: '100%'
         }
     },
     logo: {
         cursor: 'pointer',
         width: 300,
+        ['@media (max-width:1024px)']: {
+           width: 270
+        },
+        ['@media (max-width:820px)']: {
+            width: 260
+        },
+        ['@media (max-width:768px)']: {
+            width: 220
+        }
     },
     x: {
         width: 15,
@@ -130,13 +139,10 @@ const styles = createStyles({
         top: 65,
         borderRadius: '7px',
         border: '1px solid black',
-        ['@media (max-width:1457px)']: {
-            left: '44%',
-        },
-        ['@media (max-width:768px)']: {
+        ['@media (max-width:820px)']: {
             left: 'auto',
             right: 10
-        }
+        },
     },
     x4: {
         width: 15,
@@ -145,14 +151,16 @@ const styles = createStyles({
         top: 10,
         borderRadius: '7px',
         border: '1px solid black',
-        // boxShadow: ' 0px 0px 0px 3px rgba(0,0,0,0.75)',
         ['@media (max-width:1457px)']: {
-            left: '46.5%',
+            left: '36.5%',
+        },
+        ['@media (max-width:1200px)']: {
+            left: '37%',
         },
         ['@media (max-width:1050px)']: {
-            left: '47.5%',
+            left: '37.5%',
         },
-        ['@media (max-width:768px)']: {
+        ['@media (max-width:820px)']: {
             left: 'auto',
             right: 10
         }
@@ -163,7 +171,7 @@ const styles = createStyles({
         position: 'absolute',
         right: 0,
         top: 5,
-        ['@media (max-width:1457px)']: {
+        ['@media (max-width:1024px)']: {
             display: 'none',
         },
     },
@@ -174,7 +182,7 @@ const styles = createStyles({
         right: 400,
         top: 5,
         transform: 'rotate(-8deg)',
-        ['@media (max-width:1457px)']: {
+        ['@media (max-width:1280px)']: {
             display: 'none',
         },
     }
