@@ -5,6 +5,8 @@ import {Route} from 'react-router-dom';
 import {createStyles, WithStyles, withStyles} from "@material-ui/core";
 import ProductCard from "./ui/product-card/ProductCard";
 import Footer from "./ui/footer/Footer";
+import MainMenu from "./ui/main-menu/MainMenu";
+import MainMenuPanel from "./ui/main-menu/MainMenuPanel";
 
 const styles = createStyles({
     root: {
@@ -50,6 +52,7 @@ const App: FC<IProps> = ({classes}) => {
         <div className={classes.root}>
             <div className={classes.headerWrapper}>
                 <Header/>
+
             </div>
             <div className={classes.wrapperContent}>
                 <Route exact path={'/'} render={() => <div><ProductCard/></div>}/>

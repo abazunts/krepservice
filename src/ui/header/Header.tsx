@@ -8,6 +8,8 @@ import x from '../../assets/img/x-circle.png'
 import krep from '../../assets/img/krep.png'
 import krep1 from '../../assets/img/krep1.png'
 import {NavLink} from "react-router-dom";
+import MainMenuPanel from "../main-menu/MainMenuPanel";
+import whatsapp from "../../assets/icon/whatsapp.png";
 
 const styles = createStyles({
     headerCenter: {
@@ -48,12 +50,39 @@ const styles = createStyles({
         height: '8vh',
         minHeight: 70,
         zIndex: 9999,
+        ['@media (max-width:470px)']: {
+            display: 'none'
+        }
 
     },
     menuWrapper: {
         marginRight: '5%',
-        ['@media (max-width:440px)']: {
+        ['@media (max-width:470px)']: {
             display: 'none'
+        }
+    },
+    menuWrapperPanel: {
+        position: 'relative',
+        justifyContent: 'flex-start',
+        background: '#393f4b',
+        height: 40,
+        zIndex: 9999,
+        display: 'none',
+        paddingLeft: 15,
+        ['@media (max-width:470px)']: {
+            display: 'flex',
+            alignItems: 'center'
+        }
+    },
+    wrapperContacts: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        "& a": {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginLeft: 20
         }
     },
     phone: {
@@ -90,6 +119,10 @@ const styles = createStyles({
         minWidth: 450,
         marginLeft: '10%',
     },
+    phoneInPanel: {
+        color: 'white',
+        fontSize: 12,
+    },
     wrapperLogo: {
         width: '37%',
         textAlign: 'center',
@@ -107,7 +140,7 @@ const styles = createStyles({
         cursor: 'pointer',
         width: 300,
         ['@media (max-width:1024px)']: {
-           width: 270
+            width: 270
         },
         ['@media (max-width:820px)']: {
             width: 260
@@ -205,7 +238,7 @@ const Header: FC<IProps> = ({classes}) => {
             <div className={classes.wrapperPhone}>
                 <div className={classes.information}>
                     <PhoneIcon style={{color: '#f94836', marginRight: 10}}/>
-                    <div style={{display: 'flex', flexDirection: 'column',  minWidth: 400}}>
+                    <div style={{display: 'flex', flexDirection: 'column', minWidth: 400}}>
                         <span className={classes.phone}>8 702 792 70 02 / 8 701 022 60 02</span>
                         <span className={classes.phone}> 8 7122 29 84 75 / 8 7122 29 04 64</span>
                     </div>
@@ -217,10 +250,24 @@ const Header: FC<IProps> = ({classes}) => {
             <img src={krep1} className={classes.krep1}/>
             <img src={krep} className={classes.krep}/>
         </div>
+        <div className={classes.menuWrapperPanel}>
+            <MainMenuPanel/>
+            <div className={classes.wrapperContacts}>
+                <a href={'tel:+77027927002'}>
+                    <PhoneIcon style={{color: '#f94836', marginRight: 10, marginLeft: 10}}/>
+                    <span className={classes.phoneInPanel}>Позвонить</span>
+                </a>
+                <a href={"https://wa.me/77027927002"} target={'_blank'}>
+                    <img src={whatsapp} style={{width: 90}}/>
+                </a>
+            </div>
+
+        </div>
         <div className={classes.headerBottom}>
             <div className={classes.menuWrapper}>
                 <MainMenu/>
             </div>
+
         </div>
     </div>
 };
