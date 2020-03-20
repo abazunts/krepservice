@@ -63,7 +63,7 @@ const MainMenuPanel = () => {
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
-            style={{background: '#f94836', color: 'white'}}
+            style={{background: '#f94836', color: 'white', opacity: '0.9'}}
         >
             <List>
                 {mainMenu.map((text, index) => {
