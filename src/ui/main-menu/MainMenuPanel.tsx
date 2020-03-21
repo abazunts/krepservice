@@ -13,6 +13,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import DomainIcon from '@material-ui/icons/Domain';
 import InfoIcon from '@material-ui/icons/Info';
 import {color} from "../../constants-style";
+import {productionMenu} from "../../repository/catalog-menu-repository";
 
 const useStyles = makeStyles({
     list: {
@@ -30,7 +31,6 @@ const useStyles = makeStyles({
 });
 
 const mainMenu = ['Главная', 'О компании', 'Контакты'];
-const production = ['Анкера', 'Болты', 'Дюбели','Перфорация', 'Такелаж', 'Винты','Гайки', 'Заклепки', 'Саморезы','Карабин', 'Хомуты', 'Шайбы, Гроверы', 'Нержавеющий крепеж'];
 
 
 type Anchor =  'left';
@@ -94,9 +94,9 @@ const MainMenuPanel = () => {
 
             <List>
                 <div className={classes.productionTitle}>Наша продукция</div>
-                {production.map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemText primary={text}/>
+                {productionMenu.map((text, index) => (
+                    <ListItem button key={text.link}>
+                        <ListItemText primary={text.title}/>
                     </ListItem>
                 ))}
             </List>

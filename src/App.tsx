@@ -3,11 +3,13 @@ import './App.css';
 import Header from "./ui/header/Header";
 import {Route} from 'react-router-dom';
 import {createStyles, WithStyles, withStyles} from "@material-ui/core";
-import ProductCard from "./ui/product-card/ProductCard";
 import Footer from "./ui/footer/Footer";
-import MainMenu from "./ui/main-menu/MainMenu";
-import MainMenuPanel from "./ui/main-menu/MainMenuPanel";
 import {color} from "./constants-style";
+import MainPage from "./ui/main-page/MainPage";
+import {products} from "./repository/product-card-repository";
+import CatalogMenu from "./ui/catalog-menu/CatalogMenu";
+import {images} from "./repository/images-slider-repository";
+import SliderComponent from "./ui/slider/Slider";
 
 const styles = createStyles({
     root: {
@@ -26,13 +28,21 @@ const styles = createStyles({
     wrapperContent: {
         display: 'flex',
         flexWrap: 'wrap',
-        position: 'relative',
-        width: '60%',
-        marginTop: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
+        // position: 'relative',
+        maxWidth: '80%',
+        marginTop: 190,
         marginBottom: 50,
-        border: '1px solid red',
+        // border: '1px solid red',
         ['@media (max-width:440px)']: {
             width: '98%',
+        },
+        ['@media (max-width:1310px)']: {
+            maxWidth: '100%',
+        },
+        ['@media (max-width:1520px)']: {
+            maxWidth: '100%',
         }
     },
     footer: {
@@ -41,7 +51,25 @@ const styles = createStyles({
         background: color.baseColor,
         width: '100%',
         boxShadow: 'inset 0px 0px 5px 3px rgba(0,0,0,0.46)'
+    },
+    slider: {
+        position: 'relative',
+        width: '68%',
+        alignSelf: 'center'
+    },
+    topContent: {
+        display: 'flex',
+        justifyContent: 'flex-start',
+        width: '88%',
+        borderBottom: `2px dashed ${color.baseColor}`,
+        ['@media (max-width:440px)']: {
+            width: '98%',
+        },
+        ['@media (max-width:820px)']: {
+            display: 'none',
+        }
     }
+
 });
 
 interface IProps extends WithStyles<typeof styles> {
@@ -53,10 +81,16 @@ const App: FC<IProps> = ({classes}) => {
         <div className={classes.root}>
             <div className={classes.headerWrapper}>
                 <Header/>
-
             </div>
             <div className={classes.wrapperContent}>
-                <Route exact path={'/'} render={() => <div><ProductCard/></div>}/>
+                <div className={classes.topContent}>
+                    <Route  path={'/'} render={() => <CatalogMenu/>}/>
+                    <Route exact path={'/'} render={() => <div className={classes.slider}>
+                        <SliderComponent images={images}/>
+                    </div>
+                    }/>
+                </div>
+                <Route exact path={'/'} render={() => <MainPage products={products}/>}/>
                 <Route path={'/about'} render={() => <div>О компании</div>}/>
                 <Route path={'/price'} render={() => <div>Продукция</div>}/>
                 <Route path={'/contacts'} render={() => <div>Контакты</div>}/>

@@ -47,7 +47,6 @@ const MainMenu: FC<IProps & RouteComponentProps> = ({classes, ...props}) => {
     const [menu, setMenu] = useState<MenuType[]>([
         {title: 'Главная', link: '/'},
         {title: 'О Компании', link: '/about'},
-        {title: 'Продукция', link: '/price'},
         {title: 'Контакты', link: '/contacts'}]);
 
     const handleClick = (e: any) => {

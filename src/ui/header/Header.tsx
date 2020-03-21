@@ -51,14 +51,14 @@ const styles = createStyles({
         height: '8vh',
         minHeight: 70,
         zIndex: 9999,
-        ['@media (max-width:470px)']: {
+        ['@media (max-width:820px)']: {
             display: 'none'
         }
 
     },
     menuWrapper: {
         marginRight: '5%',
-        ['@media (max-width:470px)']: {
+        ['@media (max-width:820px)']: {
             display: 'none'
         }
     },
@@ -70,7 +70,7 @@ const styles = createStyles({
         zIndex: 9999,
         display: 'none',
         paddingLeft: 15,
-        ['@media (max-width:470px)']: {
+        ['@media (max-width:820px)']: {
             display: 'flex',
             alignItems: 'center'
         }

@@ -2,7 +2,7 @@
   "name": "krepservice",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abazunts.github.io/krepservice", 
+  "homepage": "https://abazunts.github.io/krepservice",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
@@ -16,6 +16,7 @@
     "@types/react-router-dom": "^5.1.3",
     "antd": "^4.0.3",
     "gh-pages": "^2.2.0",
+    "infinite-react-carousel": "^1.2.11",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",

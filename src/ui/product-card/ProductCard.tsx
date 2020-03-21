@@ -2,27 +2,39 @@ import React, {FC} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import {WithStyles} from "@material-ui/core";
+import {ProductType} from "../../types";
+import {color} from "../../constants-style";
+import {Button, CardActions, CardMedia} from "@material-ui/core";
+import {NavLink} from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
     },
     media: {
-        height: 140,
+        height: 160,
+        width: 260,
     },
+    button: {
+        color: 'white',
+        "&:hover": {
+            background: color.brandColor,
+        }
+    },
+    content: {
+        background: color.baseColor,
+        opacity: 0.9
+    }
 });
 
-interface IProps {
 
+interface IProps {
+    product: ProductType
 }
 
-const ProductCard: FC<IProps> = () => {
+const ProductCard: FC<IProps> = ({product}) => {
     const classes = useStyles();
 
     return (
@@ -30,27 +42,19 @@ const ProductCard: FC<IProps> = () => {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
+                    image={product.img}
                     title="Contemplative Reptile"
                 />
-                <CardContent>
+                <CardContent className={classes.content}>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                        <NavLink to={product.link} >
+                        <Button size="small" className={classes.button}>
+                            {product.title}
+                        </Button>
+                        </NavLink>
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
-                <Button size="small" color="primary">
-                    Learn More
-                </Button>
-            </CardActions>
         </Card>
     );
 }
