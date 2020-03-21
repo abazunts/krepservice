@@ -10,6 +10,9 @@ import {products} from "./repository/product-card-repository";
 import CatalogMenu from "./ui/catalog-menu/CatalogMenu";
 import {images} from "./repository/images-slider-repository";
 import SliderComponent from "./ui/slider/Slider";
+import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
+// @ts-ignore
+import ScrollUpButton from "react-scroll-up-button";
 
 const styles = createStyles({
     root: {
@@ -68,6 +71,33 @@ const styles = createStyles({
         ['@media (max-width:820px)']: {
             display: 'none',
         }
+    },
+    upWrapper: {
+        background: color.brandColor,
+        borderRadius: 25,
+        width: 50,
+        height: 50,
+        padding: 5,
+        color: 'white',
+        outline:'none'
+    },
+
+    AnyClassForContainer: {
+        position: 'fixed',
+        right: '-100px',
+        bottom: '150px',
+        transition: 'right 0.5s',
+        cursor: 'pointer',
+        backgroundColor: ' none',
+        borderRadius: 150,
+        fontSize: '20px',
+        padding: '10px',
+        outline:'none'
+    },
+
+    AnyClassForTransition: {
+        right: '20px',
+        outline:'none'
     }
 
 });
@@ -84,7 +114,7 @@ const App: FC<IProps> = ({classes}) => {
             </div>
             <div className={classes.wrapperContent}>
                 <div className={classes.topContent}>
-                    <Route  path={'/'} render={() => <CatalogMenu/>}/>
+                    <Route path={'/'} render={() => <CatalogMenu/>}/>
                     <Route exact path={'/'} render={() => <div className={classes.slider}>
                         <SliderComponent images={images}/>
                     </div>
@@ -99,6 +129,16 @@ const App: FC<IProps> = ({classes}) => {
             <div className={classes.footer}>
                 <Footer/>
             </div>
+
+            <ScrollUpButton
+                ContainerClassName={classes.AnyClassForContainer}
+                TransitionClassName={classes.AnyClassForTransition}
+                EasingType="linear"
+                StopPosition={4}
+            >
+                <div><VerticalAlignTopIcon className={classes.upWrapper} fontSize={'small'}/></div>
+            </ScrollUpButton>
+
         </div>
     );
 };
