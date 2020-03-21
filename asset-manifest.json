@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/krepservice/static/css/main.1e4fea12.chunk.css",
-    "main.js": "/krepservice/static/js/main.15caca86.chunk.js",
-    "main.js.map": "/krepservice/static/js/main.15caca86.chunk.js.map",
+    "main.js": "/krepservice/static/js/main.d814d3a8.chunk.js",
+    "main.js.map": "/krepservice/static/js/main.d814d3a8.chunk.js.map",
     "runtime-main.js": "/krepservice/static/js/runtime-main.734c0928.js",
     "runtime-main.js.map": "/krepservice/static/js/runtime-main.734c0928.js.map",
     "static/css/2.701fa0e4.chunk.css": "/krepservice/static/css/2.701fa0e4.chunk.css",
     "static/js/2.f5e2841b.chunk.js": "/krepservice/static/js/2.f5e2841b.chunk.js",
     "static/js/2.f5e2841b.chunk.js.map": "/krepservice/static/js/2.f5e2841b.chunk.js.map",
     "index.html": "/krepservice/index.html",
-    "precache-manifest.4a042e0059de4afa9e6b10fe4a8a3dd1.js": "/krepservice/precache-manifest.4a042e0059de4afa9e6b10fe4a8a3dd1.js",
+    "precache-manifest.8acd55f84282ed5fc078bccd85f6fc49.js": "/krepservice/precache-manifest.8acd55f84282ed5fc078bccd85f6fc49.js",
     "service-worker.js": "/krepservice/service-worker.js",
     "static/css/2.701fa0e4.chunk.css.map": "/krepservice/static/css/2.701fa0e4.chunk.css.map",
     "static/css/main.1e4fea12.chunk.css.map": "/krepservice/static/css/main.1e4fea12.chunk.css.map",
@@ -40,6 +40,6 @@
     "static/css/2.701fa0e4.chunk.css",
     "static/js/2.f5e2841b.chunk.js",
     "static/css/main.1e4fea12.chunk.css",
-    "static/js/main.15caca86.chunk.js"
+    "static/js/main.d814d3a8.chunk.js"
   ]
 }
