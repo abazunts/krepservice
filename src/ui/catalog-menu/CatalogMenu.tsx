@@ -39,7 +39,11 @@ const useStyles = makeStyles((theme: Theme) =>
         activeLink: {
             height: 30,
             backgroundColor: color.brandColor,
-            color: 'white'
+            color: 'white',
+            "&:hover": {
+                backgroundColor: color.brandColor,
+                color: 'white',
+            }
         }
     }),
 );
