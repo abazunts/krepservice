@@ -24,7 +24,7 @@ const SliderComponent = ({images}) => {
     return <div className="content-form home-form">
         <div>
             <Slider {...settings} >
-                {images.map(img => <img width={'100%'} height={'80%'} src={img}/> )}
+                {images.map((img, index) => <img key={index} width={'100%'} height={'80%'} src={img}/> )}
 
             </Slider>
         </div>

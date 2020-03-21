@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {FC, useState} from 'react';
 import {createStyles, Theme, makeStyles} from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem, {ListItemProps} from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
 import {productionMenu} from "../../repository/catalog-menu-repository";
 import {color} from "../../constants-style";
-import {NavLink} from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
+import {RouteComponentProps} from "react-router";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -35,6 +35,11 @@ const useStyles = makeStyles((theme: Theme) =>
             fontWeight: 600,
             width: 300,
             backgroundColor: color.brandColor
+        },
+        activeLink: {
+            height: 30,
+            backgroundColor: color.brandColor,
+            color: 'white'
         }
     }),
 );
@@ -43,16 +48,15 @@ function ListItemLink(props: ListItemProps<'a', { button?: true }>) {
     return <ListItem button component="a" {...props} />;
 }
 
-const CatalogMenu = () => {
+const CatalogMenu: FC<RouteComponentProps> = (props) => {
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
             <div className={classes.catalogMenuTitle}>Наша продукция</div>
-            {/*<Divider/>*/}
             <List component="nav" aria-label="secondary mailbox folders" className={classes.list}>
-                {productionMenu.map((product) => <NavLink to={product.link}><ListItemLink button
-                                                                                          className={classes.menuTitle}>
+                {productionMenu.map((product, index) => <NavLink key={index} to={product.link} ><ListItemLink button
+                                                                                          className={product.link === props.location.pathname ? classes.activeLink : classes.menuTitle} >
                     <ListItemText primary={product.title}/>
                 </ListItemLink></NavLink>)}
             </List>
@@ -60,4 +64,4 @@ const CatalogMenu = () => {
     );
 };
 
-export default CatalogMenu;
+export default withRouter(CatalogMenu);
