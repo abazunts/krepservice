@@ -19,9 +19,6 @@ const useStyles = makeStyles({
     },
     button: {
         color: 'white',
-        // "&:hover": {
-        //     background: color.brandColor,
-        // }
     },
     content: {
         background: color.baseColor,
