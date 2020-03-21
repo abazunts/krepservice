@@ -1,7 +1,7 @@
 import {ProductionMenuType} from "../types";
 
 export const productionMenu: ProductionMenuType[] = [
-    {title: 'Анкера', link: '/anchor'},
+    {title: 'Анкеры', link: '/anchor'},
     {title: 'Болты', link: '/anchor'},
     {title: 'Дюбели', link: '/anchor'},
     {title: 'Перфорация', link: '/anchor'},
