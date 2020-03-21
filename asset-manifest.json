@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/krepservice/static/css/main.1e4fea12.chunk.css",
-    "main.js": "/krepservice/static/js/main.d814d3a8.chunk.js",
-    "main.js.map": "/krepservice/static/js/main.d814d3a8.chunk.js.map",
+    "main.js": "/krepservice/static/js/main.03771f21.chunk.js",
+    "main.js.map": "/krepservice/static/js/main.03771f21.chunk.js.map",
     "runtime-main.js": "/krepservice/static/js/runtime-main.734c0928.js",
     "runtime-main.js.map": "/krepservice/static/js/runtime-main.734c0928.js.map",
     "static/css/2.701fa0e4.chunk.css": "/krepservice/static/css/2.701fa0e4.chunk.css",
     "static/js/2.f5e2841b.chunk.js": "/krepservice/static/js/2.f5e2841b.chunk.js",
     "static/js/2.f5e2841b.chunk.js.map": "/krepservice/static/js/2.f5e2841b.chunk.js.map",
     "index.html": "/krepservice/index.html",
-    "precache-manifest.8acd55f84282ed5fc078bccd85f6fc49.js": "/krepservice/precache-manifest.8acd55f84282ed5fc078bccd85f6fc49.js",
+    "precache-manifest.2f38b35e43869f7cd6f6a0b0a2e50677.js": "/krepservice/precache-manifest.2f38b35e43869f7cd6f6a0b0a2e50677.js",
     "service-worker.js": "/krepservice/service-worker.js",
     "static/css/2.701fa0e4.chunk.css.map": "/krepservice/static/css/2.701fa0e4.chunk.css.map",
     "static/css/main.1e4fea12.chunk.css.map": "/krepservice/static/css/main.1e4fea12.chunk.css.map",
@@ -19,27 +19,27 @@
     "static/media/3.jpg": "/krepservice/static/media/3.f4f45d7b.jpg",
     "static/media/4.jpg": "/krepservice/static/media/4.53a917a5.jpg",
     "static/media/5.jpg": "/krepservice/static/media/5.ef252aa7.jpg",
-    "static/media/anchor.jpg": "/krepservice/static/media/anchor.8ce6c9d5.jpg",
-    "static/media/bolts.jpg": "/krepservice/static/media/bolts.6a3f9893.jpg",
-    "static/media/dyubel.jpg": "/krepservice/static/media/dyubel.f0dc8b54.jpg",
-    "static/media/gayki.jpg": "/krepservice/static/media/gayki.c4aa1538.jpg",
-    "static/media/homuts.jpg": "/krepservice/static/media/homuts.aa5be092.jpg",
+    "static/media/anchor.jpg": "/krepservice/static/media/anchor.290f9abc.jpg",
+    "static/media/bolts.jpg": "/krepservice/static/media/bolts.278d223a.jpg",
+    "static/media/dyubel.jpg": "/krepservice/static/media/dyubel.a5768036.jpg",
+    "static/media/gayki.jpg": "/krepservice/static/media/gayki.7f6ec734.jpg",
+    "static/media/homuts.jpg": "/krepservice/static/media/homuts.86a9d559.jpg",
     "static/media/krep.png": "/krepservice/static/media/krep.e3c4feb3.png",
     "static/media/krep1.png": "/krepservice/static/media/krep1.7f2ac77c.png",
     "static/media/logo-white.png": "/krepservice/static/media/logo-white.3a433013.png",
-    "static/media/no-corrosian.jpg": "/krepservice/static/media/no-corrosian.a09d8cce.jpg",
-    "static/media/perf.jpg": "/krepservice/static/media/perf.8ea702e3.jpg",
-    "static/media/rigging.jpg": "/krepservice/static/media/rigging.2c353285.jpg",
-    "static/media/screws.jpg": "/krepservice/static/media/screws.5672559c.jpg",
-    "static/media/vints.jpg": "/krepservice/static/media/vints.889ca8d4.jpg",
+    "static/media/no-corrosian.jpg": "/krepservice/static/media/no-corrosian.f56fd8b9.jpg",
+    "static/media/perf.jpg": "/krepservice/static/media/perf.01f2290b.jpg",
+    "static/media/rigging.jpg": "/krepservice/static/media/rigging.8e0a0528.jpg",
+    "static/media/screws.jpg": "/krepservice/static/media/screws.e4e9b14b.jpg",
+    "static/media/vints.jpg": "/krepservice/static/media/vints.98d09a43.jpg",
     "static/media/whatsapp.png": "/krepservice/static/media/whatsapp.0d6ce701.png",
-    "static/media/zaklepki.jpg": "/krepservice/static/media/zaklepki.c0294b17.jpg"
+    "static/media/zaklepki.jpg": "/krepservice/static/media/zaklepki.ba2148bd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.734c0928.js",
     "static/css/2.701fa0e4.chunk.css",
     "static/js/2.f5e2841b.chunk.js",
     "static/css/main.1e4fea12.chunk.css",
-    "static/js/main.d814d3a8.chunk.js"
+    "static/js/main.03771f21.chunk.js"
   ]
 }
