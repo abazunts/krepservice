@@ -19,13 +19,16 @@ const useStyles = makeStyles({
     },
     button: {
         color: 'white',
-        "&:hover": {
-            background: color.brandColor,
-        }
+        // "&:hover": {
+        //     background: color.brandColor,
+        // }
     },
     content: {
         background: color.baseColor,
-        opacity: 0.9
+        opacity: 0.9,
+        "&:hover": {
+            background: color.brandColor,
+        }
     }
 });
 
