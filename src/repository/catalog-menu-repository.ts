@@ -10,7 +10,7 @@ export const productionMenu: ProductionMenuType[] = [
     {title: menuTitleEnum.screws, link: '/screws'},
     {title: menuTitleEnum.nuts, link: '/nuts'},
     {title: menuTitleEnum.rivets, link: '/rivets'},
-    {title: menuTitleEnum.selfTappingScrews, link: '/self-tapping-screws'},
+    {title: menuTitleEnum.selfTappingScrews, link: '/selfTappingScrews'},
     {title: menuTitleEnum.collars, link: '/collars'},
     {title: menuTitleEnum.washers, link: '/washers'},
     {title: menuTitleEnum.corrosionProof, link: '/corrosion-proof'},

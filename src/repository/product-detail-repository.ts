@@ -14,6 +14,8 @@ import img11 from '../assets/detail-products/bolts/img11.jpg'
 import img12 from '../assets/detail-products/bolts/img12.jpg'
 import img13 from '../assets/detail-products/bolts/img13.jpg'
 import img14 from '../assets/detail-products/bolts/img14.jpg'
+import img107 from '../assets/detail-products/bolts/img107.jpg'
+import img108 from '../assets/detail-products/bolts/img108.jpg'
 
 import img15 from '../assets/detail-products/dowels/img15.jpg'
 import img16 from '../assets/detail-products/dowels/img16.jpg'
@@ -84,9 +86,50 @@ import img76 from '../assets/detail-products/nuts/img76.jpg'
 import img77 from '../assets/detail-products/nuts/img77.jpg'
 import img78 from '../assets/detail-products/nuts/img78.jpg'
 import img79 from '../assets/detail-products/nuts/img79.jpg'
+import img80 from '../assets/detail-products/nuts/img80.jpg'
+import img81 from '../assets/detail-products/nuts/img81.jpg'
+import img82 from '../assets/detail-products/nuts/img82.jpg'
 
-import img80 from '../assets/detail-products/rivets/img80.jpg'
-import img81 from '../assets/detail-products/rivets/img81.jpg'
+import img83 from '../assets/detail-products/rivets/img83.jpg'
+import img84 from '../assets/detail-products/rivets/img84.jpg'
+
+import img85 from '../assets/detail-products/self-tapping-screws/img85.jpg'
+import img86 from '../assets/detail-products/self-tapping-screws/img86.jpg'
+import img87 from '../assets/detail-products/self-tapping-screws/img87.jpg'
+import img88 from '../assets/detail-products/self-tapping-screws/img88.jpg'
+import img89 from '../assets/detail-products/self-tapping-screws/img89.jpg'
+import img90 from '../assets/detail-products/self-tapping-screws/img90.jpg'
+import img91 from '../assets/detail-products/self-tapping-screws/img91.jpg'
+import img92 from '../assets/detail-products/self-tapping-screws/img92.jpg'
+import img93 from '../assets/detail-products/self-tapping-screws/img93.jpg'
+import img94 from '../assets/detail-products/self-tapping-screws/img94.jpg'
+import img95 from '../assets/detail-products/self-tapping-screws/img95.jpg'
+import img96 from '../assets/detail-products/self-tapping-screws/img96.jpg'
+import img97 from '../assets/detail-products/self-tapping-screws/img97.jpg'
+import img98 from '../assets/detail-products/self-tapping-screws/img98.jpg'
+import img99 from '../assets/detail-products/self-tapping-screws/img99.jpg'
+import img100 from '../assets/detail-products/self-tapping-screws/img100.jpg'
+import img101 from '../assets/detail-products/self-tapping-screws/img101.jpg'
+import img102 from '../assets/detail-products/self-tapping-screws/img102.jpg'
+import img103 from '../assets/detail-products/self-tapping-screws/img103.jpg'
+import img104 from '../assets/detail-products/self-tapping-screws/img104.jpg'
+import img105 from '../assets/detail-products/self-tapping-screws/img105.jpg'
+import img106 from '../assets/detail-products/self-tapping-screws/img106.jpg'
+
+import img109 from '../assets/detail-products/collars/img109.jpg'
+import img110 from '../assets/detail-products/collars/img110.jpg'
+import img111 from '../assets/detail-products/collars/img111.jpg'
+import img112 from '../assets/detail-products/collars/img112.jpg'
+import img113 from '../assets/detail-products/collars/img113.jpg'
+import img114 from '../assets/detail-products/collars/img114.jpg'
+
+import img115 from '../assets/detail-products/washers/img115.jpg'
+import img116 from '../assets/detail-products/washers/img116.jpg'
+import img117 from '../assets/detail-products/washers/img117.jpg'
+import img118 from '../assets/detail-products/washers/img118.jpg'
+import img119 from '../assets/detail-products/washers/img119.jpg'
+
+
 
 
 
@@ -155,6 +198,14 @@ export const detail: DetailProductType = {
             id: 5,
             title: 'Болт с шестигранной головкой и полной резьбой DIN 933',
             img: img14,
+        }, {
+            id: 6,
+            title: 'Болт сантехнический',
+            img: img107,
+        }, {
+            id: 7,
+            title: 'Шпилька резьбовая DIN 976',
+            img: img108,
         }
     ],
     dowels: [
@@ -449,18 +500,190 @@ export const detail: DetailProductType = {
             id: 9,
             title: 'Гайка шестигранная с фланцем DIN-6923',
             img: img79,
+        },
+        {
+            id: 10,
+            title: 'Гайка шестигранная ГОСТ 5915-70',
+            img: img80,
+        },
+        {
+            id: 11,
+            title: 'Гайка шестигранная ГОСТ Р 52645-2006',
+            img: img81,
+        },
+        {
+            id: 12,
+            title: 'Гака шестигранная DIN-934',
+            img: img82,
         }
     ],
     rivets: [
         {
             id: 1,
             title: 'Заклепка вытяжная',
-            img: img80,
+            img: img83,
         },
         {
             id: 2,
             title: 'Заклёпка цветная вытяжная окрашенная в цвета RAL',
-            img: img81,
+            img: img84,
+        }
+    ],
+    selfTappingScrews: [
+        {
+            id: 1,
+            title: 'Саморез для дерева универсальный, желтый цинк',
+            img: img85,
+        },
+        {
+            id: 2,
+            title: 'Саморез для дерева универсальный,белый цинк',
+            img: img86,
+        },{
+            id: 3,
+            title: 'Саморез для крепления ГКЛ к деревянной обрешетке, крупная резьба',
+            img: img87,
+        },
+        {
+            id: 4,
+            title: 'Саморез для крепления ГКЛ к маталлическим профилям толщиной до 0,9мм, частая резтба',
+            img: img88,
+        },{
+            id: 5,
+            title: 'Саморез для крепления кровельных материалов к дереву ( с шайбой и прокладкой EPDM)',
+            img: img89,
+        },
+        {
+            id: 6,
+            title: 'Саморез для крепления кровельных материалов к металлическим профелям (с шайбой и прокладкой EPDM)',
+            img: img90,
+        },{
+            id: 7,
+            title: 'Саморез для крепления сендвич-панелей',
+            img: img91,
+        },
+        {
+            id: 8,
+            title: 'Саморез для соединения металлических профиле, DIN 7504-K',
+            img: img92,
+        },{
+            id: 9,
+            title: 'Саморез острый с полуцилиндрической головкой для крепления к металлу толщиной до 0,9 мм.',
+            img: img93,
+        },
+        {
+            id: 10,
+            title: 'Саморез с потайной головкой, по металлу- толщиной до 2мм.',
+            img: img94,
+        },{
+            id: 11,
+            title: 'Саморез с пресшайбой острый, для крепления к металлу тощиной до 0,9мм.',
+            img: img95,
+        },
+        {
+            id: 12,
+            title: 'Саморез с пресшайбой со сверлом, для крепления к металлу тощиной до 2мм.',
+            img: img96,
+        },{
+            id: 13,
+            title: 'Саморез с удлиненным сверлом (15мм.) для крепления кровельных материалов к металлу (с шайбой и прокладкой EPDM)',
+            img: img97,
+        },
+        {
+            id: 14,
+            title: 'Саморез со сверлом с полуцилиндрической головкой для крепления к металлу толщиной до 2мм.',
+            img: img98,
+        },{
+            id: 15,
+            title: 'Саморезы для крепления кровельных материалов к дереву ( с шайбой и прокладкой EPDM) окрашенные в цвета RAL',
+            img: img99,
+        },
+        {
+            id: 16,
+            title: 'Саморезы с пресшайбой острый, для крепления к металлу тощиной до 0,9мм. орашенные в цвета RAL',
+            img: img100,
+        },{
+            id: 17,
+            title: 'Саморезы с пресшайбой со сверлом, для крепления к металлу тощиной до 2мм. орашенные в цвета RAL',
+            img: img101,
+        },
+        {
+            id: 18,
+            title: 'Шуруп Г-образный',
+            img: img102,
+        },{
+            id: 19,
+            title: 'Шуруп для крепления деревянных лаг и реек (глухарь) DIN 571',
+            img: img103,
+        },
+        {
+            id: 20,
+            title: 'Шуруп монтажный для крепления оконных рам и дверных блоков к бетону',
+            img: img104,
+        },{
+            id: 21,
+            title: 'Шуруп-кольцо',
+            img: img105,
+        },
+        {
+            id: 22,
+            title: 'Шуруп-крючек',
+            img: img106,
+        }
+    ],
+    collars: [
+        {
+            id: 1,
+            title: 'U-болт для крепления труб',
+            img: img109,
+        },
+        {
+            id: 2,
+            title: 'Клипса для крепления пластиковой трубы, гофры',
+            img: img110,
+        },{
+            id: 3,
+            title: 'Скоба металлическая двухлапковая, для электромонтажных работ',
+            img: img111,
+        },
+        {
+            id: 4,
+            title: 'Хомут для труб сантехнический, с прокладкой из EPDM-резины',
+            img: img112,
+        },{
+            id: 5,
+            title: 'Хомут Червячный DIN 3017',
+            img: img113,
+        },
+        {
+            id: 6,
+            title: 'Хомут-стяжка нейлоновый',
+            img: img114,
+        }
+    ],
+    washers: [
+        {
+            id: 1,
+            title: 'Шайба DIN-125',
+            img: img115,
+        },
+        {
+            id: 2,
+            title: 'Шайба ГОСТ Р 52646-2006',
+            img: img116,
+        },{
+            id: 3,
+            title: 'Шайба ГОСТ-11371',
+            img: img117,
+        },
+        {
+            id: 4,
+            title: 'Шайба пружинная (гровер) DIN-127',
+            img: img118,
+        },{
+            id: 5,
+            title: 'Шайба увеличенная DIN-9021',
+            img: img119,
         }
     ]
 };
