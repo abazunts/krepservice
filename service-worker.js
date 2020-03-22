@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/krepservice/precache-manifest.96ba446b23792f0df2432f9dab99e9f0.js"
+  "/krepservice/precache-manifest.a469810d0127fce8b9dcf14ffeff2be0.js"
 );
 
 self.addEventListener('message', (event) => {
