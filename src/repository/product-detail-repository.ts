@@ -137,6 +137,10 @@ import img124 from '../assets/detail-products/corrosionProof/img124.jpg'
 import img125 from '../assets/detail-products/corrosionProof/img125.jpg'
 import img126 from '../assets/detail-products/corrosionProof/img126.jpg'
 import img127 from '../assets/detail-products/corrosionProof/img127.jpg'
+import img128 from '../assets/detail-products/corrosionProof/img128.jpg'
+import img129 from '../assets/detail-products/corrosionProof/img129.jpg'
+import img130 from '../assets/detail-products/corrosionProof/img130.jpg'
+import img131 from '../assets/detail-products/corrosionProof/img131.jpg'
 
 
 
@@ -730,6 +734,22 @@ export const detail: DetailProductType = {
             id: 8,
             title: 'Шайба увеличенная, из нержавеющей стали А2, А4 DIN-9021',
             img: img127,
+        },{
+            id: 9,
+            title: 'Болт с шестигранной головкой из, из нержавеющей стали А2, А4 DIN 933',
+            img: img128,
+        },{
+            id: 10,
+            title: 'Гайка шестигранная антивандальная отрывная, из нержавеющей стали А2',
+            img: img129,
+        },{
+            id: 11,
+            title: 'Заклепка вытяжная, из нержавеющей стали А2 DIN 7337',
+            img: img130,
+        },{
+            id: 12,
+            title: 'Шпильки резьбовые из нержавеющей стали А2, А4 длина 1м, 2м. DIN 976',
+            img: img131,
         }
     ]
 };
