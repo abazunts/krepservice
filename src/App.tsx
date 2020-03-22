@@ -13,6 +13,7 @@ import SliderComponent from "./ui/slider/Slider";
 import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
 // @ts-ignore
 import ScrollUpButton from "react-scroll-up-button";
+import ProductDetail from "./ui/product-detail/ProductDetail";
 
 const styles = createStyles({
     root: {
@@ -68,8 +69,24 @@ const styles = createStyles({
         ['@media (max-width:440px)']: {
             width: '98%',
         },
+        ['@media (max-width:1370px)']: {
+            width: '98%',
+        },
         ['@media (max-width:820px)']: {
             display: 'none',
+        }
+    },
+
+    productDetail: {
+        display: 'none',
+        justifyContent: 'flex-start',
+        width: '88%',
+        borderBottom: `2px dashed ${color.baseColor}`,
+        ['@media (max-width:440px)']: {
+            width: '98%',
+        },
+        ['@media (max-width:820px)']: {
+            display: 'flex',
         }
     },
     upWrapper: {
@@ -115,10 +132,15 @@ const App: FC<IProps> = ({classes}) => {
             <div className={classes.wrapperContent}>
                 <div className={classes.topContent}>
                     <Route path={'/'} render={() => <CatalogMenu/>}/>
+                    <Route path={'/:key'} render={() => <ProductDetail/>}/>
                     <Route exact path={'/'} render={() => <div className={classes.slider}>
                         <SliderComponent images={images}/>
                     </div>
+
                     }/>
+                </div>
+                <div className={classes.productDetail}>
+                    <Route path={'/:key'} render={() => <ProductDetail/>}/>
                 </div>
                 <Route exact path={'/'} render={() => <MainPage products={products}/>}/>
                 <Route path={'/about'} render={() => <div>О компании</div>}/>
