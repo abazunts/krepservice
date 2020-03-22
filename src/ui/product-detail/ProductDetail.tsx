@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import {makeStyles} from "@material-ui/core/styles";
 import {withRouter} from "react-router-dom";
 import {RouteComponentProps} from "react-router";
@@ -27,7 +27,7 @@ const useStyles = makeStyles({
     },
     title: {
         textAlign: 'center',
-        width: 200,
+        width: 250,
         borderBottom: `2px solid ${color.brandColor}`
     }
 });
@@ -35,6 +35,11 @@ const useStyles = makeStyles({
 
 const ProductDetail: FC<RouteComponentProps<{ key: menuTitleEnum }>> = (props) => {
     const classes = useStyles();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props.location.pathname]);
+
     const {key} = props.match.params;
     let title;
     switch (key) {

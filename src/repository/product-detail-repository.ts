@@ -129,6 +129,15 @@ import img117 from '../assets/detail-products/washers/img117.jpg'
 import img118 from '../assets/detail-products/washers/img118.jpg'
 import img119 from '../assets/detail-products/washers/img119.jpg'
 
+import img120 from '../assets/detail-products/corrosionProof/img120.jpg'
+import img121 from '../assets/detail-products/corrosionProof/img121.jpg'
+import img122 from '../assets/detail-products/corrosionProof/img122.jpg'
+import img123 from '../assets/detail-products/corrosionProof/img123.jpg'
+import img124 from '../assets/detail-products/corrosionProof/img124.jpg'
+import img125 from '../assets/detail-products/corrosionProof/img125.jpg'
+import img126 from '../assets/detail-products/corrosionProof/img126.jpg'
+import img127 from '../assets/detail-products/corrosionProof/img127.jpg'
+
 
 
 
@@ -684,6 +693,43 @@ export const detail: DetailProductType = {
             id: 5,
             title: 'Шайба увеличенная DIN-9021',
             img: img119,
+        }
+    ],
+    corrosionProof: [
+        {
+            id: 1,
+            title: 'Винт с полусферической головкой, из нержавеющей стали А2, А4 DIN 7985',
+            img: img120,
+        },
+        {
+            id: 2,
+            title: 'Винт с потайной головкой, из нердавеющей стали А2, А4 DIN 965',
+            img: img121,
+        },{
+            id: 3,
+            title: 'Гайка шестигранная, из нержавеющей стали А2, А4 DIN-934',
+            img: img122,
+        },
+        {
+            id: 4,
+            title: 'Саморез острый с полукруглой головкой из нержавеющей стали А2, А4 DIN 7981',
+            img: img123,
+        },{
+            id: 5,
+            title: 'Саморез со сверлом, полукруглая головка, крестообразный шлиц DIN-7504M',
+            img: img124,
+        },{
+            id: 6,
+            title: 'Шайба плоская из нержавеющий стали А2, А4 DIN125',
+            img: img125,
+        },{
+            id: 7,
+            title: 'Шайба пружинная (гровер) из нержавейщей стали А2, А4 DIN-127',
+            img: img126,
+        },{
+            id: 8,
+            title: 'Шайба увеличенная, из нержавеющей стали А2, А4 DIN-9021',
+            img: img127,
         }
     ]
 };

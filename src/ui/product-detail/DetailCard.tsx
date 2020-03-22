@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     },
     media: {
         height: 160,
-        width: 260,
+        width: 285,
     },
     button: {
         color: 'black',
