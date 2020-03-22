@@ -1,6 +1,8 @@
+import {menuTitleEnum} from "./constants";
+
 export type ProductType = {
     id: number
-    title: string
+    title: menuTitleEnum
     link: string
     img: string
 };
@@ -12,7 +14,7 @@ export type DetailType = {
 };
 
 export type ProductionMenuType = {
-    title: string
+    title: menuTitleEnum
     link: string
 };
 

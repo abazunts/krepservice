@@ -1,18 +1,19 @@
 import {ProductionMenuType} from "../types";
+import {menuTitleEnum} from "../constants";
 
 export const productionMenu: ProductionMenuType[] = [
-    {title: 'Анкеры', link: '/anchor'},
-    {title: 'Болты', link: '/bolts'},
-    {title: 'Дюбели', link: '/dowels'},
-    {title: 'Перфорация', link: '/perforation'},
-    {title: 'Такелаж', link: '/rigging'},
-    {title: 'Винты', link: '/screws'},
-    {title: 'Гайки', link: '/nuts'},
-    {title: 'Заклепки', link: '/rivets'},
-    {title: 'Саморезы', link: '/self-tapping-screws'},
-    {title: 'Хомуты', link: '/collars'},
-    {title: 'Шайбы, Гроверы', link: '/washers'},
-    {title: 'Нержавеющий крепеж', link: '/corrosion-proof'},
+    {title: menuTitleEnum.anchor, link: '/anchor'},
+    {title: menuTitleEnum.bolts, link: '/bolts'},
+    {title: menuTitleEnum.dowels, link: '/dowels'},
+    {title: menuTitleEnum.perforation, link: '/perforation'},
+    {title: menuTitleEnum.rigging, link: '/rigging'},
+    {title: menuTitleEnum.screws, link: '/screws'},
+    {title: menuTitleEnum.nuts, link: '/nuts'},
+    {title: menuTitleEnum.rivets, link: '/rivets'},
+    {title: menuTitleEnum.selfTappingScrews, link: '/self-tapping-screws'},
+    {title: menuTitleEnum.collars, link: '/collars'},
+    {title: menuTitleEnum.washers, link: '/washers'},
+    {title: menuTitleEnum.corrosionProof, link: '/corrosion-proof'},
 ];
 
 export const mainMenu = [

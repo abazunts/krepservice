@@ -36,7 +36,7 @@ interface IProps {
 
 const ProductCard: FC<IProps> = ({product}) => {
     const classes = useStyles();
-
+debugger
     return (
         <Card className={classes.root}>
             <CardActionArea>
