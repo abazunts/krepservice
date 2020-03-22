@@ -51,6 +51,45 @@ import img46 from '../assets/detail-products/perforation/img46.jpg'
 import img47 from '../assets/detail-products/perforation/img47.jpg'
 import img48 from '../assets/detail-products/perforation/img48.jpg'
 
+import img49 from '../assets/detail-products/rigging/img49.jpg'
+import img50 from '../assets/detail-products/rigging/img50.jpg'
+import img51 from '../assets/detail-products/rigging/img51.jpg'
+import img52 from '../assets/detail-products/rigging/img52.jpg'
+import img53 from '../assets/detail-products/rigging/img53.jpg'
+import img54 from '../assets/detail-products/rigging/img54.jpg'
+import img55 from '../assets/detail-products/rigging/img55.jpg'
+import img56 from '../assets/detail-products/rigging/img56.jpg'
+import img57 from '../assets/detail-products/rigging/img57.jpg'
+import img58 from '../assets/detail-products/rigging/img58.jpg'
+import img59 from '../assets/detail-products/rigging/img59.jpg'
+import img60 from '../assets/detail-products/rigging/img60.jpg'
+import img61 from '../assets/detail-products/rigging/img61.jpg'
+import img62 from '../assets/detail-products/rigging/img62.jpg'
+import img63 from '../assets/detail-products/rigging/img63.jpg'
+import img64 from '../assets/detail-products/rigging/img64.jpg'
+import img65 from '../assets/detail-products/rigging/img65.jpg'
+import img66 from '../assets/detail-products/rigging/img66.jpg'
+
+import img67 from '../assets/detail-products/screws/img67.jpg'
+import img68 from '../assets/detail-products/screws/img68.jpg'
+import img69 from '../assets/detail-products/screws/img69.jpg'
+import img70 from '../assets/detail-products/screws/img70.jpg'
+
+import img71 from '../assets/detail-products/nuts/img71.jpg'
+import img72 from '../assets/detail-products/nuts/img72.jpg'
+import img73 from '../assets/detail-products/nuts/img73.jpg'
+import img74 from '../assets/detail-products/nuts/img74.jpg'
+import img75 from '../assets/detail-products/nuts/img75.jpg'
+import img76 from '../assets/detail-products/nuts/img76.jpg'
+import img77 from '../assets/detail-products/nuts/img77.jpg'
+import img78 from '../assets/detail-products/nuts/img78.jpg'
+import img79 from '../assets/detail-products/nuts/img79.jpg'
+
+import img80 from '../assets/detail-products/rivets/img80.jpg'
+import img81 from '../assets/detail-products/rivets/img81.jpg'
+
+
+
 export const detail: DetailProductType = {
     anchor: [
         {
@@ -263,6 +302,165 @@ export const detail: DetailProductType = {
             id: 14,
             title: 'Опора балки левая-правая',
             img: img48,
+        }
+    ],
+    rigging: [
+        {
+            id: 1,
+            title: 'Блок одинарный с нейлоновым роликом',
+            img: img49,
+        },
+        {
+            id: 2,
+            title: 'Вертлюг петля-петля',
+            img: img50,
+        },
+        {
+            id: 3,
+            title: 'Зажим для стальных канатов DIN-741',
+            img: img51,
+        },
+        {
+            id: 4,
+            title: 'Карабин винтовой',
+            img: img52,
+        }, {
+            id: 5,
+            title: 'Карабин пожарный с фиксатором DIN 5299D',
+            img: img53,
+        }, {
+            id: 6,
+            title: 'Коуш DIN-6899',
+            img: img54,
+        }, {
+            id: 7,
+            title: 'Крюк грузовой с защелкой',
+            img: img55,
+        }, {
+            id: 8,
+            title: 'Рым-болт DIN-580',
+            img: img56,
+        }, {
+            id: 9,
+            title: 'Рым-гайка DIN-582',
+            img: img57,
+        }, {
+            id: 10,
+            title: 'Скоба для стяжки фланцев воздуховодов (с болтом)',
+            img: img58,
+        }, {
+            id: 11,
+            title: 'Скоба такелажная, Омегаобразная',
+            img: img59,
+        }, {
+            id: 12,
+            title: 'Скоба такелажная, Прямой тип',
+            img: img60,
+        },{
+            id: 13,
+            title: 'Соеденитель троса двойной',
+            img: img61,
+        }, {
+            id: 14,
+            title: 'Соеденитель троса одинарный',
+            img: img62,
+        }, {
+            id: 15,
+            title: 'Струбцина монтажная',
+            img: img63,
+        }, {
+            id: 16,
+            title: 'Талреп Крюк-Кольцо DIN-1480',
+            img: img64,
+        }, {
+            id: 17,
+            title: 'Трос стальной для растяжки DIN-3055',
+            img: img65,
+        }, {
+            id: 18,
+            title: 'Цепь DIN-763 DIN-766',
+            img: img66,
+        }
+    ],
+    screws: [
+        {
+            id: 1,
+            title: 'Винт DIN-967',
+            img: img67,
+        },
+        {
+            id: 2,
+            title: 'Винт с полусферической головкой DIN-7985',
+            img: img68,
+        },
+        {
+            id: 3,
+            title: 'Винт с потайной головкой DIN-965',
+            img: img69,
+        },
+        {
+            id: 4,
+            title: 'Винты с цилиндрической головкой под шестигранник ГОСТ-11738-84',
+            img: img70,
+        }
+    ],
+    nuts: [
+        {
+            id: 1,
+            title: 'Гайка барашковая DIN-315',
+            img: img71,
+        },
+        {
+            id: 2,
+            title: 'Гайка (муфта) шестигранная соеденительная DIN 6334',
+            img: img72,
+        },
+        {
+            id: 3,
+            title: 'Гайка квадратная DIN-562',
+            img: img73,
+        },
+        {
+            id: 4,
+            title: 'Гайка крыльчатая DIN-1624',
+            img: img74,
+        },
+        {
+            id: 5,
+            title: 'Гайка лоточная с пружиной',
+            img: img75,
+        },
+        {
+            id: 6,
+            title: 'Гайка шестигранная колпачковая DIN-1587',
+            img: img76,
+        },
+        {
+            id: 7,
+            title: 'Гайка шестигранная корончатая DIN-935',
+            img: img77,
+        },
+        {
+            id: 8,
+            title: 'Гайка шестигранная с нейлоновой вставкой DIN-985',
+            img: img78,
+        },
+        {
+            id: 9,
+            title: 'Гайка шестигранная с фланцем DIN-6923',
+            img: img79,
+        }
+    ],
+    rivets: [
+        {
+            id: 1,
+            title: 'Заклепка вытяжная',
+            img: img80,
+        },
+        {
+            id: 2,
+            title: 'Заклёпка цветная вытяжная окрашенная в цвета RAL',
+            img: img81,
         }
     ]
 };
