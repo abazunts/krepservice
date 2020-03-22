@@ -12,4 +12,3 @@ export enum menuTitleEnum {
     washers = 'Шайбы',
     corrosionProof = 'Нержавеющий крепеж',
 }
-
