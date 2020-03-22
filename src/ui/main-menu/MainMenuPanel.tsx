@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {FC} from 'react';
 import clsx from 'clsx';
 import {makeStyles} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -13,7 +13,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import DomainIcon from '@material-ui/icons/Domain';
 import InfoIcon from '@material-ui/icons/Info';
 import {color} from "../../constants-style";
-import {productionMenu} from "../../repository/catalog-menu-repository";
+import {mainMenu, productionMenu} from "../../repository/catalog-menu-repository";
+import {withRouter} from "react-router-dom";
+import {RouteComponentProps} from "react-router";
 
 const useStyles = makeStyles({
     list: {
@@ -30,12 +32,10 @@ const useStyles = makeStyles({
     }
 });
 
-const mainMenu = ['Главная', 'О компании', 'Контакты'];
 
+type Anchor = 'left';
 
-type Anchor =  'left';
-
-const MainMenuPanel = () => {
+const MainMenuPanel: FC<RouteComponentProps> = (props) => {
     const classes = useStyles();
     const [state, setState] = React.useState({
         top: false,
@@ -69,7 +69,7 @@ const MainMenuPanel = () => {
             <List>
                 {mainMenu.map((text, index) => {
                     let icon = <InboxIcon/>;
-                    switch (text) {
+                    switch (text.title) {
                         case 'Главная': {
                             icon = <DomainIcon style={{color: 'white'}}/>;
                             break;
@@ -83,9 +83,9 @@ const MainMenuPanel = () => {
                             break;
                         }
                     }
-                    return <ListItem button key={text}>
+                    return <ListItem button key={text.title} onClick={() => props.history.push(`${text.link}`) }>
                         <ListItemIcon>{icon}</ListItemIcon>
-                        <ListItemText primary={text}/>
+                        <ListItemText primary={text.title}/>
                     </ListItem>
                 })}
 
@@ -95,9 +95,9 @@ const MainMenuPanel = () => {
             <List>
                 <div className={classes.productionTitle}>Наша продукция</div>
                 {productionMenu.map((text, index) => (
-                    <ListItem button key={text.link}>
-                        <ListItemText primary={text.title}/>
-                    </ListItem>
+                        <ListItem button key={text.link} onClick={() => props.history.push(`${text.link}`) }>
+                            <ListItemText primary={text.title}/>
+                        </ListItem>
                 ))}
             </List>
         </div>
@@ -107,7 +107,7 @@ const MainMenuPanel = () => {
         <div>
             <React.Fragment key={'left'}>
                 <MenuIcon onClick={toggleDrawer('left', true)} fontSize={'large'} style={{color: "white"}}/>
-                <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)} >
+                <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
                     {list('left')}
                 </Drawer>
             </React.Fragment>
@@ -115,4 +115,4 @@ const MainMenuPanel = () => {
     );
 }
 
-export default MainMenuPanel
+export default withRouter(MainMenuPanel)

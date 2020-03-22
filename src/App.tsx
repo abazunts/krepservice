@@ -132,7 +132,7 @@ const App: FC<IProps> = ({classes}) => {
             <div className={classes.wrapperContent}>
                 <div className={classes.topContent}>
                     <Route path={'/'} render={() => <CatalogMenu/>}/>
-                    <Route path={'/:key'} render={() => <ProductDetail/>}/>
+                    <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
                     <Route exact path={'/'} render={() => <div className={classes.slider}>
                         <SliderComponent images={images}/>
                     </div>
@@ -140,11 +140,10 @@ const App: FC<IProps> = ({classes}) => {
                     }/>
                 </div>
                 <div className={classes.productDetail}>
-                    <Route path={'/:key'} render={() => <ProductDetail/>}/>
+                    <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
                 </div>
                 <Route exact path={'/'} render={() => <MainPage products={products}/>}/>
                 <Route path={'/about'} render={() => <div>О компании</div>}/>
-                <Route path={'/price'} render={() => <div>Продукция</div>}/>
                 <Route path={'/contacts'} render={() => <div>Контакты</div>}/>
             </div>
 
