@@ -51,9 +51,6 @@ import img46 from '../assets/detail-products/perforation/img46.jpg'
 import img47 from '../assets/detail-products/perforation/img47.jpg'
 import img48 from '../assets/detail-products/perforation/img48.jpg'
 
-
-
-
 export const detail: DetailProductType = {
     anchor: [
         {
