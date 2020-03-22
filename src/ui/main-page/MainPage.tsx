@@ -32,7 +32,7 @@ const MainPage: FC<IProps> = ({products}) => {
     return <div className={classes.root}>
         <div className={classes.productsWrapper}>
             {products.map((product) => <div key={product.id} className={classes.mainPage}><NavLink
-                to={product.link}><ProductCard product={product}/></NavLink></div>)}
+                to={'/products' + product.link}><ProductCard product={product}/></NavLink></div>)}
         </div>
     </div>
 };

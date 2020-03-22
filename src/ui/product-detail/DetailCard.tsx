@@ -5,12 +5,13 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import {DetailType} from "../../types";
-import {color} from "../../constants-style";
-import {Button, CardMedia} from "@material-ui/core";
+import {CardMedia} from "@material-ui/core";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: 285,
+        width: 285,
+        height: 230
     },
     media: {
         height: 160,
@@ -18,6 +19,9 @@ const useStyles = makeStyles({
     },
     button: {
         color: 'black',
+        textAlign: 'center',
+        fontWeight: 600,
+        fontSize: 12
     },
     content: {
         background: 'white',
@@ -41,11 +45,14 @@ const DetailCard: FC<IProps> = ({product}) => {
                     title="Contemplative Reptile"
                 />
                 <CardContent className={classes.content}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                            <Button size="small" className={classes.button}>
-                                {product.title}
-                            </Button>
+                    <Typography variant="body2" color="textSecondary" component="p" className={classes.button}>
+                        {product.title}
                     </Typography>
+                    {/*<Typography gutterBottom variant="h5" component="h2">*/}
+                    {/*        <Button size="small" className={classes.button}>*/}
+                    {/*            */}
+                    {/*        </Button>*/}
+                    {/*</Typography>*/}
                 </CardContent>
             </CardActionArea>
         </Card>

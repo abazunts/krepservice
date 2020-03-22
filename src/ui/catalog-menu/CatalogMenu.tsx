@@ -59,7 +59,7 @@ const CatalogMenu: FC<RouteComponentProps> = (props) => {
         <div className={classes.root}>
             <div className={classes.catalogMenuTitle}>Наша продукция</div>
             <List component="nav" aria-label="secondary mailbox folders" className={classes.list}>
-                {productionMenu.map((product, index) => <NavLink key={index} to={product.link} ><ListItemLink button
+                {productionMenu.map((product, index) => <NavLink key={index} to={'/products' + product.link} ><ListItemLink button
                                                                                           className={product.link === props.location.pathname ? classes.activeLink : classes.menuTitle} >
                     <ListItemText primary={product.title}/>
                 </ListItemLink></NavLink>)}

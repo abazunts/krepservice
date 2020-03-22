@@ -21,53 +21,53 @@ export const products: ProductType[] = [
     {
         id: 2,
         title: 'Такелаж',
-        link: '/bolt',
+        link: '/bolts',
         img: rigging,
     },
     {
         id: 4,
         title: 'Саморезы',
-        link: '/bolt',
+        link: '/bolts',
         img: screws,
     }, {
         id: 5,
         title: 'Болты',
-        link: '/bolt',
+        link: '/bolts',
         img: bolts,
     }, {
         id: 6,
         title: 'Дюбели',
-        link: '/bolt',
+        link: '/dowels',
         img: dyubel,
     }, {
         id: 7,
         title: 'Винты',
-        link: '/bolt',
+        link: '/bolts',
         img: vints,
     },{
         id: 8,
         title: 'Гайки',
-        link: '/bolt',
+        link: '/bolts',
         img: gayki,
     },{
         id: 9,
         title: 'Заклепки',
-        link: '/bolt',
+        link: '/bolts',
         img: zaklepki,
     },{
         id: 10,
         title: 'Нержавеющий крепеж',
-        link: '/bolt',
+        link: '/bolts',
         img: noCorrosian,
     },{
         id: 11,
         title: 'Перфорация',
-        link: '/bolt',
+        link: '/perforation',
         img: perf,
     },{
         id: 12,
         title: 'Хомуты',
-        link: '/bolt',
+        link: '/bolts',
         img: homuts,
     },
 ];

@@ -95,7 +95,7 @@ const MainMenuPanel: FC<RouteComponentProps> = (props) => {
             <List>
                 <div className={classes.productionTitle}>Наша продукция</div>
                 {productionMenu.map((text, index) => (
-                        <ListItem button key={text.link} onClick={() => props.history.push(`${text.link}`) }>
+                        <ListItem button key={text.link} onClick={() => props.history.push(`/products${text.link}`) }>
                             <ListItemText primary={text.title}/>
                         </ListItem>
                 ))}

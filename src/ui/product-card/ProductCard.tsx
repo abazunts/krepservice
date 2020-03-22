@@ -47,7 +47,7 @@ const ProductCard: FC<IProps> = ({product}) => {
                 />
                 <CardContent className={classes.content}>
                     <Typography gutterBottom variant="h5" component="h2">
-                        <NavLink to={product.link} >
+                        <NavLink to={'/products'+product.link} >
                         <Button size="small" className={classes.button}>
                             {product.title}
                         </Button>
