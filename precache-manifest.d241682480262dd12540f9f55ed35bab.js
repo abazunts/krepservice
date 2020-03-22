@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a991889aab0223190baf12b39b1f4804",
+    "revision": "424fa3c145046ae369d90b8bb638c0ef",
     "url": "/krepservice/index.html"
   },
   {
-    "revision": "a551eebfe1c694d1fb5f",
+    "revision": "fd1fc58c2827a70188fe",
     "url": "/krepservice/static/css/2.701fa0e4.chunk.css"
   },
   {
-    "revision": "28ee58aa1880c868be61",
+    "revision": "df16f630f6766fa0395a",
     "url": "/krepservice/static/css/main.1e4fea12.chunk.css"
   },
   {
-    "revision": "a551eebfe1c694d1fb5f",
-    "url": "/krepservice/static/js/2.9faa3f9d.chunk.js"
+    "revision": "fd1fc58c2827a70188fe",
+    "url": "/krepservice/static/js/2.049709ee.chunk.js"
   },
   {
     "revision": "c099810c3c102db7a44755001529c804",
-    "url": "/krepservice/static/js/2.9faa3f9d.chunk.js.LICENSE.txt"
+    "url": "/krepservice/static/js/2.049709ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28ee58aa1880c868be61",
-    "url": "/krepservice/static/js/main.f36f29e4.chunk.js"
+    "revision": "df16f630f6766fa0395a",
+    "url": "/krepservice/static/js/main.c45656ad.chunk.js"
   },
   {
     "revision": "742dcf948bc05bec8d41",
@@ -162,6 +162,38 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c23238484d6059d967651d38e533e8b4",
     "url": "/krepservice/static/media/img12.c2323848.jpg"
+  },
+  {
+    "revision": "ae21e1b50ef69c2231557aac0a8185b3",
+    "url": "/krepservice/static/media/img120.ae21e1b5.jpg"
+  },
+  {
+    "revision": "31a095397809dfe34c328ccb91eb1147",
+    "url": "/krepservice/static/media/img121.31a09539.jpg"
+  },
+  {
+    "revision": "6fa8ab521377f9d08ffb4db0f48a47e4",
+    "url": "/krepservice/static/media/img122.6fa8ab52.jpg"
+  },
+  {
+    "revision": "378cf959b69664de5fc6a30543c983d9",
+    "url": "/krepservice/static/media/img123.378cf959.jpg"
+  },
+  {
+    "revision": "dde7b139de8009ecaf13ddeee45be43f",
+    "url": "/krepservice/static/media/img124.dde7b139.jpg"
+  },
+  {
+    "revision": "267f201bdfbbadfe04dca00d5bdcb334",
+    "url": "/krepservice/static/media/img125.267f201b.jpg"
+  },
+  {
+    "revision": "474e90dce4c8cc8b0e1699c1d3c24927",
+    "url": "/krepservice/static/media/img126.474e90dc.jpg"
+  },
+  {
+    "revision": "4781dd39e26111b076603d105744ce11",
+    "url": "/krepservice/static/media/img127.4781dd39.jpg"
   },
   {
     "revision": "30dbec44955f15769e7cbe541ba704e5",
