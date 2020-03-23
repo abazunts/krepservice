@@ -55,9 +55,8 @@ const Footer: FC<IProps> = ({classes}) => {
         </div>
 
         <div className={classes.copyright}>
-            <p>All rights reserved © {year}</p>
+            <p>All rights reserved KrepService © {year}</p>
         </div>
-
     </div>
 };
 

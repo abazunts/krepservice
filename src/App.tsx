@@ -14,6 +14,7 @@ import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
 // @ts-ignore
 import ScrollUpButton from "react-scroll-up-button";
 import ProductDetail from "./ui/product-detail/ProductDetail";
+import About from "./ui/about/About";
 
 const styles = createStyles({
     root: {
@@ -138,12 +139,12 @@ const App: FC<IProps> = ({classes}) => {
                     </div>
 
                     }/>
+                    <Route exact path={'/about'} render={() => <About/>}/>
                 </div>
                 <div className={classes.productDetail}>
                     <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
                 </div>
                 <Route exact path={'/'} render={() => <MainPage products={products}/>}/>
-                <Route path={'/about'} render={() => <div>О компании</div>}/>
                 <Route path={'/contacts'} render={() => <div>Контакты</div>}/>
             </div>
 

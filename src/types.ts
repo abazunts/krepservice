@@ -22,6 +22,10 @@ export type DetailProductType = {
     [key: string]: DetailType[]
 }
 
+export type AboutCompanyType = {
+    [key: string]: string
+}
+
 
 
 
