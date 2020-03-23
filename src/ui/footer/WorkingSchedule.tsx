@@ -21,7 +21,10 @@ const styles = createStyles({
         flexDirection: 'column',
         marginLeft: 10,
         fontSize: 12,
-        marginRight: 10
+        marginRight: 10,
+        "& span": {
+            marginBottom: 10
+        }
     },
     icon: {
         width: 25
@@ -62,8 +65,8 @@ const WorkingSchedule: FC<IProps> = ({classes}) => {
             <div>
                 <div className={classes.phone}>Наши адреса:</div>
                 <div className={classes.phone}>
-                    <span>г. Атырау, ТД Байтерек 38 бутик</span>
-                    <span>г. Атырау, Бизнес – центр AGASA 1 этаж</span>
+                    <span>ул. Курмангазы 73 (Т. Бигельдинова д.30) <div> офис AGASA 1 этаж</div></span>
+                    <span>ул. И.Тайманова д 133А, <div>ЦСМ "Байтерек", 3-ангарб 36 бутик</div></span>
                 </div>
             </div>
 
