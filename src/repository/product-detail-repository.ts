@@ -534,12 +534,12 @@ export const detail: DetailProductType = {
         {
             id: 1,
             title: 'Заклепка вытяжная',
-            img: img83,
+            img: img84,
         },
         {
             id: 2,
             title: 'Заклёпка цветная вытяжная окрашенная в цвета RAL',
-            img: img84,
+            img: img83,
         }
     ],
     selfTappingScrews: [
