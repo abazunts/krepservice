@@ -1,10 +1,11 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import {ProductType} from "../../types";
 import ProductCard from "../product-card/ProductCard";
 import {makeStyles} from "@material-ui/core/styles";
-import {NavLink} from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 import CustomerSlider from "../customers/Slider";
 import {color} from "../../constants-style";
+import {RouteComponentProps} from "react-router";
 
 const useStyles = makeStyles({
     root: {
@@ -44,9 +45,14 @@ interface IProps {
     products: ProductType[]
 }
 
-const MainPage: FC<IProps> = ({products}) => {
+const MainPage: FC<IProps & RouteComponentProps> = ({products,...props}) => {
 
     const classes = useStyles();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props.location.pathname]);
+
 
     return <div className={classes.root}>
         <div className={classes.productsWrapper}>
@@ -62,4 +68,4 @@ const MainPage: FC<IProps> = ({products}) => {
     </div>
 };
 
-export default MainPage
+export default withRouter(MainPage)

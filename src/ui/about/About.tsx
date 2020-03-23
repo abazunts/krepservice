@@ -1,7 +1,9 @@
-import React, {FC} from 'react'
+import React, {FC, useEffect} from 'react'
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 import {aboutCompany} from "../../repository/about-company-repository";
 import {color} from "../../constants-style";
+import {RouteComponentProps} from "react-router";
+import {withRouter} from "react-router-dom";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -37,8 +39,13 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-const About: FC = () => {
+const About: FC<RouteComponentProps> = (props) => {
     const classes = useStyles();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props.location.pathname]);
+
 
     return <div className={classes.root}>
         <div className={classes.title}>
@@ -67,4 +74,4 @@ const About: FC = () => {
     </div>
 };
 
-export default About;
+export default withRouter(About);

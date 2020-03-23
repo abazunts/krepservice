@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 import {color} from "../../constants-style";
 import mobile from "../../assets/icon/phone-black.png";
@@ -7,6 +7,8 @@ import address from "../../assets/icon/address-black.png";
 import email from "../../assets/icon/email-black.png";
 import shop1 from "../../assets/address/shop1.jpg";
 import shop2 from "../../assets/address/shop2.jpg";
+import { withRouter } from 'react-router-dom';
+import {RouteComponentProps} from "react-router";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -73,7 +75,10 @@ const useStyles = makeStyles((theme: Theme) =>
         }
     }),
 );
-const Contacts: FC = () => {
+const Contacts: FC<RouteComponentProps> = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [props.location.pathname]);
 
     const classes = useStyles();
 
@@ -140,4 +145,4 @@ const Contacts: FC = () => {
 
 };
 
-export default Contacts
+export default withRouter(Contacts)
