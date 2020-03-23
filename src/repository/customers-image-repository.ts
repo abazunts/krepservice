@@ -15,6 +15,7 @@ import img14 from '../assets/customers/img14.jpg'
 import img15 from '../assets/customers/img15.jpg'
 import img16 from '../assets/customers/img16.jpg'
 import img17 from '../assets/customers/img17.jpg'
+import img18 from '../assets/customers/img18.jpg'
 
 
 export const customerImages = [
@@ -35,4 +36,5 @@ export const customerImages = [
     img15,
     img16,
     img17,
+    img18,
 ];
