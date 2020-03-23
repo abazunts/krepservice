@@ -143,6 +143,7 @@ const App: FC<IProps> = ({classes}) => {
                 </div>
                 <div className={classes.productDetail}>
                     <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
+                    <Route exact path={'/about'} render={() => <About/>}/>
                 </div>
                 <Route exact path={'/'} render={() => <MainPage products={products}/>}/>
                 <Route path={'/contacts'} render={() => <div>Контакты</div>}/>
