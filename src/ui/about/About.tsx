@@ -56,7 +56,7 @@ const About: FC = () => {
             <b>{aboutCompany.paragraph3.substring(27, 41)}</b> {aboutCompany.paragraph3.substring(41, aboutCompany.paragraph3.length)}
         </div>
         <div className={classes.paragraph}>
-            <span>{aboutCompany.paragraph4.substring(0, 11)}</span><b>{aboutCompany.paragraph4.substring(11, 25)}</b>{aboutCompany.paragraph1.substring(23, aboutCompany.paragraph1.length)}
+            <span>{aboutCompany.paragraph4.substring(0, 11)}</span><b>{aboutCompany.paragraph4.substring(11, 25)}</b>{aboutCompany.paragraph4.substring(25, aboutCompany.paragraph1.length)}
         </div>
         <div className={classes.paragraph}>
             <span>{aboutCompany.paragraph5}</span>
