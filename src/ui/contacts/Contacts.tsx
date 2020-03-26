@@ -103,7 +103,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                     </div>
                 </div>
                 <div>
-                    <div className={classes.helpText}>Нажмите чтобы открыть карту</div>
+                    <div className={classes.helpText}>Нажмите, чтобы открыть карту</div>
                     <a href={'https://go.2gis.com/4s9hw'} target={'_blank'}> <img src={shop2} className={classes.wrapperAddress}/></a>
                 </div>
             </div>
@@ -122,7 +122,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                     </div>
                 </div>
                 <div>
-                    <div className={classes.helpText}>Нажмите чтобы открыть карту</div>
+                    <div className={classes.helpText}>Нажмите, чтобы открыть карту</div>
                     <a href={'https://go.2gis.com/6nmnk'} target={'_blank'}><img src={shop1} className={classes.wrapperAddress}/></a>
                 </div>
             </div>
