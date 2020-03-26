@@ -98,7 +98,7 @@ const styles = createStyles({
         height: 50,
         padding: 5,
         color: 'white',
-        outline:'none'
+        outline: 'none'
     },
 
     AnyClassForContainer: {
@@ -111,12 +111,12 @@ const styles = createStyles({
         borderRadius: 150,
         fontSize: '20px',
         padding: '10px',
-        outline:'none'
+        outline: 'none'
     },
 
     AnyClassForTransition: {
         right: '20px',
-        outline:'none'
+        outline: 'none'
     }
 
 });
@@ -133,23 +133,21 @@ const App: FC<IProps> = ({classes}) => {
             </div>
             <div className={classes.wrapperContent}>
                 <div className={classes.topContent}>
-                    <Route path={'/'} render={() => <CatalogMenu/>}/>
-                    <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
-                    <Route exact path={'/'} render={() => <div className={classes.slider}>
-                        <SliderComponent images={images}/>
-                    </div>
-
-                    }/>
-                    <Route exact path={'/about'} render={() => <About/>}/>
-                    <Route path={'/contacts'} render={() => <Contacts/>}/>
+                        <Route path={'/'} render={() => <CatalogMenu/>}/>
+                        <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
+                        <Route exact path={'/'} render={() => <div className={classes.slider}>
+                            <SliderComponent images={images}/>
+                        </div>
+                        }/>
+                        <Route exact path={'/about'} render={() => <About/>}/>
+                        <Route path={'/contacts'} render={() => <Contacts/>}/>
                 </div>
                 <div className={classes.productDetail}>
-                    <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
-                    <Route exact path={'/about'} render={() => <About/>}/>
-                    <Route path={'/contacts'} render={() => <Contacts/>}/>
+                        <Route path={'/products/:key'} render={() => <ProductDetail/>}/>
+                        <Route exact path={'/about'} render={() => <About/>}/>
+                        <Route path={'/contacts'} render={() => <Contacts/>}/>
                 </div>
-                <Route exact path={'/'} render={() => <MainPage products={products}/>}/>
-
+                    <Route exact path={'/'} render={() => <MainPage products={products}/>}/>
             </div>
 
             <div className={classes.footer}>
