@@ -99,15 +99,13 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                 <div className={classes.shop1}>
                     <img src={address} className={classes.icon}/>
                     <div>
-                        <span>ул. И.Тайманова д 133А, <div>ЦСМ "Байтерек", 3-ангарб 36 бутик</div></span>
+                        <span>ул. Курмангазы 73 (Т. Бигельдинова д.30) <div> офис AGASA 1 этаж</div></span>
                     </div>
                 </div>
                 <div>
                     <div className={classes.helpText}>Нажмите чтобы открыть карту</div>
-                    <a href={'https://go.2gis.com/6nmnk'} target={'_blank'}><img src={shop1} className={classes.wrapperAddress}/></a>
-
+                    <a href={'https://go.2gis.com/4s9hw'} target={'_blank'}> <img src={shop2} className={classes.wrapperAddress}/></a>
                 </div>
-
             </div>
             <div style={{marginBottom: 20}}>
                 <div className={classes.shop1}>
@@ -120,12 +118,12 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                 <div className={classes.shop1}>
                     <img src={address} className={classes.icon}/>
                     <div>
-                        <span>ул. Курмангазы 73 (Т. Бигельдинова д.30) <div> офис AGASA 1 этаж</div></span>
+                        <span>ул. И.Тайманова д 133А, <div>ЦСМ "Байтерек", 3-ангар, 36 бутик</div></span>
                     </div>
                 </div>
                 <div>
                     <div className={classes.helpText}>Нажмите чтобы открыть карту</div>
-                    <a href={'https://go.2gis.com/4s9hw'} target={'_blank'}> <img src={shop2} className={classes.wrapperAddress}/></a>
+                    <a href={'https://go.2gis.com/6nmnk'} target={'_blank'}><img src={shop1} className={classes.wrapperAddress}/></a>
                 </div>
             </div>
         </div>

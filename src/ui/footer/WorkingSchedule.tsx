@@ -66,7 +66,7 @@ const WorkingSchedule: FC<IProps> = ({classes}) => {
                 <div className={classes.phone}>Наши адреса:</div>
                 <div className={classes.phone}>
                     <span>ул. Курмангазы 73 (Т. Бигельдинова д.30) <div> офис AGASA 1 этаж</div></span>
-                    <span>ул. И.Тайманова д 133А, <div>ЦСМ "Байтерек", 3-ангарб 36 бутик</div></span>
+                    <span>ул. И.Тайманова д 133А, <div>ЦСМ "Байтерек", 3-ангар, 36 бутик</div></span>
                 </div>
             </div>
 
