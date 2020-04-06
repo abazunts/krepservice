@@ -5,4 +5,4 @@ Disallow:
 User-agent: YandexBot
 Disallow:
 Host: krepservice.kz
-Sitemap: https://krepservice.lz/sitemap.xml
+Sitemap: https://krepservice.kz/sitemap.xml
