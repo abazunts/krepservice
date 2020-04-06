@@ -32,6 +32,7 @@
     "react-scripts": "3.4.0",
     "react-scroll-up-button": "^1.6.4",
     "react-seo-component": "^1.0.0",
+    "react-yandex-metrika": "^2.6.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
