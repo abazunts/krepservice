@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
 import {HashRouter} from "react-router-dom";
 
+
 ReactDOM.render(<HashRouter>
     <App />
 </HashRouter>, document.getElementById('root'));

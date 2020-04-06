@@ -65,7 +65,7 @@ const MainPage: FC<IProps & RouteComponentProps> = ({products, ...props}) => {
             base={{"target": "_blank", "href": "https://krepservice.kz/"}}
             meta={[
                 {"name": "description", "content": "Магазин крепежных материалов, в Атырау"},
-                {"property": "og:type", "content": "Крепежи"}
+                {"property": "og:type", "content": "Крепежи, болты, гайки, саморезы, шурупы, такелаж"}
             ]}
             link={[
                 {"rel": "Крепеж", "href": "https://krepservice.kz/"},
