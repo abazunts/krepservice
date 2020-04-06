@@ -6,6 +6,8 @@ import {NavLink, withRouter} from "react-router-dom";
 import CustomerSlider from "../customers/Slider";
 import {color} from "../../constants-style";
 import {RouteComponentProps} from "react-router";
+import Helmet from "react-helmet"
+
 
 const useStyles = makeStyles({
     root: {
@@ -45,7 +47,7 @@ interface IProps {
     products: ProductType[]
 }
 
-const MainPage: FC<IProps & RouteComponentProps> = ({products,...props}) => {
+const MainPage: FC<IProps & RouteComponentProps> = ({products, ...props}) => {
 
     const classes = useStyles();
 
@@ -55,6 +57,20 @@ const MainPage: FC<IProps & RouteComponentProps> = ({products,...props}) => {
 
 
     return <div className={classes.root}>
+        <Helmet
+            htmlAttributes={{"lang": "en", "amp": undefined}} // amp takes no value
+            title="Крепеж в Атырау"
+            titleTemplate="Krep Service - %s"
+            defaultTitle="Krep Service"
+            base={{"target": "_blank", "href": "https://krepservice.kz/"}}
+            meta={[
+                {"name": "description", "content": "Магазин крепежных материалов, в Атырау"},
+                {"property": "og:type", "content": "Крепежи"}
+            ]}
+            link={[
+                {"rel": "Крепеж", "href": "https://krepservice.kz/"},
+            ]}
+        />
         <div className={classes.productsWrapper}>
             {products.map((product) => <div key={product.id} className={classes.mainPage}><NavLink
                 to={'/products' + product.link}><ProductCard product={product}/></NavLink></div>)}

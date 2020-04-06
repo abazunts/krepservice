@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import {DetailType} from "../../types";
 import {CardMedia} from "@material-ui/core";
+import Helmet from "react-helmet";
 
 const useStyles = makeStyles({
     root: {
@@ -38,6 +39,7 @@ const DetailCard: FC<IProps> = ({product}) => {
 
     return (
         <Card className={classes.root}>
+
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
