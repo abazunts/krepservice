@@ -104,7 +104,7 @@ const ProductDetail: FC<RouteComponentProps<{ key: menuTitleEnum }>> = (props) =
             base={{"target": "_blank", "href": "https://krepservice.kz/"+ key}}
             meta={[
                 {"name": "description", "content": `${title} в Атырау`},
-                {"property": "og:type", "content": "Крепежи"}
+                {"property": "og:type", "content": `Крепежи, ${title}`}
             ]}
             link={[
                 {"rel": "Крепеж", "href": "https://krepservice.kz/"},
