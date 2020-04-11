@@ -229,12 +229,12 @@ interface IProps extends WithStyles<typeof styles> {
 const Header: FC<IProps> = ({classes}) => {
     return <div>
         <div className={classes.headerCenter}>
-            <img src={x} className={classes.x}/>
-            <img src={x} className={classes.x2}/>
-            <img src={x} className={classes.x3}/>
-            <img src={x} className={classes.x4}/>
+            <img src={x} className={classes.x} alt={'https://krepservice.kz'}/>
+            <img src={x} className={classes.x2} alt={'https://krepservice.kz'}/>
+            <img src={x} className={classes.x3} alt={'Krep Service'}/>
+            <img src={x} className={classes.x4} alt={'Krep Service'}/>
             <div className={classes.wrapperLogo}>
-                <NavLink to={'/'}><img src={logo} className={classes.logo}/></NavLink>
+                <NavLink to={'/'}><img src={logo} className={classes.logo} alt={'Krep Service'}/></NavLink>
             </div>
             <div className={classes.wrapperPhone}>
                 <div className={classes.information}>
@@ -248,8 +248,8 @@ const Header: FC<IProps> = ({classes}) => {
                     <QueryBuilderIcon style={{color: color.brandColor, marginRight: 10}}/><span className={classes.date}>Пн–Пт 09:00–18:00, Сб 10:00–16:00</span>
                 </div>
             </div>
-            <img src={krep1} className={classes.krep1}/>
-            <img src={krep} className={classes.krep}/>
+            <img src={krep1} className={classes.krep1} alt={'https://krepservice.kz'}/>
+            <img src={krep} className={classes.krep} alt={'https://krepservice.kz'}/>
         </div>
         <div className={classes.menuWrapperPanel}>
             <MainMenuPanel/>
@@ -259,7 +259,7 @@ const Header: FC<IProps> = ({classes}) => {
                     <span className={classes.phoneInPanel}>Позвонить</span>
                 </a>
                 <a href={"https://wa.me/77027927002"} target={'_blank'}>
-                    <img src={whatsapp} style={{width: 90}}/>
+                    <img src={whatsapp} style={{width: 90}} alt={'Krep Service'}/>
                 </a>
             </div>
 

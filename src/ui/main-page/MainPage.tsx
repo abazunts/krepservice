@@ -64,7 +64,7 @@ const MainPage: FC<IProps & RouteComponentProps> = ({products, ...props}) => {
             defaultTitle="Krep Service"
             base={{"target": "_blank", "href": "https://krepservice.kz/"}}
             meta={[
-                {"name": "description", "content": "Магазин крепежных материалов, в Атырау"},
+                {"name": "description", "content": "Магазин крепежных материалов, в Атырау, Крепежи, болты, гайки, саморезы, шурупы, такелаж"},
                 {"property": "og:type", "content": "Крепежи, болты, гайки, саморезы, шурупы, такелаж"}
             ]}
             link={[

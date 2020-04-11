@@ -103,7 +103,7 @@ const ProductDetail: FC<RouteComponentProps<{ key: menuTitleEnum }>> = (props) =
             defaultTitle="Krep Service"
             base={{"target": "_blank", "href": "https://krepservice.kz/"+ key}}
             meta={[
-                {"name": "description", "content": `${title} в Атырау`},
+                {"name": "description", "content": `${title} в Атырау, Магазин крепежных материалов, в Атырау, Крепежи, болты, гайки, саморезы, шурупы, такелаж`},
                 {"property": "og:type", "content": `Крепежи, ${title}`}
             ]}
             link={[
@@ -111,7 +111,7 @@ const ProductDetail: FC<RouteComponentProps<{ key: menuTitleEnum }>> = (props) =
             ]}
         />
         <div className={classes.title}>
-            <span style={{color: 'black', fontSize: 18}}>{title}</span>
+            <h1 style={{color: 'black', fontSize: 18}}>{title}</h1>
         </div>
         <div className={classes.productsWrapper}>
             {detail[key].map((product) => <div key={product.id} className={classes.mainPage}><DetailCard

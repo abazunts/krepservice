@@ -92,7 +92,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
             defaultTitle="Krep Service"
             base={{"target": "_blank", "href": "https://krepservice.kz/"}}
             meta={[
-                {"name": "description", "content": "Магазин крепежных материалов, в Атырау"},
+                {"name": "description", "content": "Магазин крепежных материалов, в Атырау, Крепежи, болты, гайки, саморезы, шурупы, такелаж"},
                 {"property": "og:type", "content": "Крепежи, болты, гайки, саморезы, шурупы, такелаж"}
             ]}
             link={[
@@ -100,7 +100,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
             ]}
         />
         <div className={classes.title}>
-            <span style={{color: 'black', fontSize: 18}}>Контакты</span>
+            <h1 style={{color: 'black', fontSize: 18}}>Контакты</h1>
         </div>
         <div className={classes.wrapperContacts}>
             <div style={{marginBottom: 20, marginRight: 20}}>
@@ -119,7 +119,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                 </div>
                 <div>
                     <div className={classes.helpText}>Нажмите, чтобы открыть карту</div>
-                    <a href={'https://go.2gis.com/4s9hw'} target={'_blank'}> <img src={shop2} className={classes.wrapperAddress}/></a>
+                    <a href={'https://go.2gis.com/4s9hw'} target={'_blank'}> <img src={shop2} className={classes.wrapperAddress} alt={'Krep Service'}/></a>
                 </div>
             </div>
             <div style={{marginBottom: 20}}>
@@ -138,7 +138,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                 </div>
                 <div>
                     <div className={classes.helpText}>Нажмите, чтобы открыть карту</div>
-                    <a href={'https://go.2gis.com/6nmnk'} target={'_blank'}><img src={shop1} className={classes.wrapperAddress}/></a>
+                    <a href={'https://go.2gis.com/6nmnk'} target={'_blank'}><img src={shop1} className={classes.wrapperAddress} alt={'Krep Service'}/></a>
                 </div>
             </div>
         </div>

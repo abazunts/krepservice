@@ -56,7 +56,7 @@ const About: FC<RouteComponentProps> = (props) => {
             defaultTitle="Krep Service"
             base={{"target": "_blank", "href": "https://krepservice.kz/"}}
             meta={[
-                {"name": "description", "content": "Магазин крепежных материалов, в Атырау"},
+                {"name": "description", "content": "Магазин крепежных материалов, в Атырау, Крепежи, болты, гайки, саморезы, шурупы, такелаж "},
                 {"property": "og:type", "content": "Крепежи, болты, гайки, саморезы, шурупы, такелаж"}
             ]}
             link={[
@@ -64,7 +64,7 @@ const About: FC<RouteComponentProps> = (props) => {
             ]}
         />
         <div className={classes.title}>
-            <span style={{color: 'black', fontSize: 18}}>О Компании</span>
+            <h1 style={{color: 'black', fontSize: 18}}>О Компании</h1>
         </div>
         <div className={classes.paragraph}>
             <span

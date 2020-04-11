@@ -44,11 +44,11 @@ const DetailCard: FC<IProps> = ({product}) => {
                 <CardMedia
                     className={classes.media}
                     image={product.img}
-                    title="Contemplative Reptile"
+                    title={product.title}
                 />
                 <CardContent className={classes.content}>
                     <Typography variant="body2" color="textSecondary" component="p" className={classes.button}>
-                        {product.title}
+                        <h2 style={{fontSize: 12, fontWeight: 700}}>{product.title}</h2>
                     </Typography>
                     {/*<Typography gutterBottom variant="h5" component="h2">*/}
                     {/*        <Button size="small" className={classes.button}>*/}
