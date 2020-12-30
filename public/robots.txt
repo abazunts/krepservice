@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+User-agent: YandexBot
+Disallow:
+Host: krepservice.kz
+Sitemap: https://krepservice.kz/sitemap.xml

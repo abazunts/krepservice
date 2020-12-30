@@ -7,6 +7,8 @@ import DetailCard from "./DetailCard";
 import {menuTitleEnum} from "../../constants";
 import {productionMenu} from "../../repository/catalog-menu-repository";
 import {color} from "../../constants-style";
+import Helmet from "react-helmet";
+import Card from "@material-ui/core/Card";
 
 const useStyles = makeStyles({
     root: {
@@ -94,8 +96,22 @@ const ProductDetail: FC<RouteComponentProps<{ key: menuTitleEnum }>> = (props) =
     }
 
     return <div className={classes.root}>
+        <Helmet
+            htmlAttributes={{"lang": "en", "amp": undefined}} // amp takes no value
+            title={title}
+            titleTemplate="Krep Service - %s"
+            defaultTitle="Krep Service"
+            base={{"target": "_blank", "href": "https://krepservice.kz/"+ key}}
+            meta={[
+                {"name": "description", "content": `${title} в Атырау, Магазин крепежных материалов, в Атырау, Крепежи, болты, гайки, саморезы, шурупы, такелаж`},
+                {"property": "og:type", "content": `Крепежи, ${title}`}
+            ]}
+            link={[
+                {"rel": "Крепеж", "href": "https://krepservice.kz/"},
+            ]}
+        />
         <div className={classes.title}>
-            <span style={{color: 'black', fontSize: 18}}>{title}</span>
+            <h1 style={{color: 'black', fontSize: 18}}>{title}</h1>
         </div>
         <div className={classes.productsWrapper}>
             {detail[key].map((product) => <div key={product.id} className={classes.mainPage}><DetailCard

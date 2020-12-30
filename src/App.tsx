@@ -16,6 +16,7 @@ import ScrollUpButton from "react-scroll-up-button";
 import ProductDetail from "./ui/product-detail/ProductDetail";
 import About from "./ui/about/About";
 import Contacts from "./ui/contacts/Contacts";
+import {YMInitializer} from "react-yandex-metrika";
 
 const styles = createStyles({
     root: {
@@ -162,7 +163,7 @@ const App: FC<IProps> = ({classes}) => {
             >
                 <div><VerticalAlignTopIcon className={classes.upWrapper} fontSize={'small'}/></div>
             </ScrollUpButton>
-
+            <YMInitializer accounts={[61685317]}/>
         </div>
     );
 };

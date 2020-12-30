@@ -55,7 +55,7 @@ const CustomerSlider = () => {
     const classes = useStyles();
     return <div className={classes.slider}>
         <Carousel responsive={responsive} {...settings}>
-            {customerImages.map(image => <img src={image}/>)}
+            {customerImages.map(image => <img src={image} alt={'Крепеж'}/>)}
         </Carousel>
     </div>
 };

@@ -42,7 +42,7 @@ const ProductCard: FC<IProps> = ({product}) => {
                 <CardMedia
                     className={classes.media}
                     image={product.img}
-                    title="Contemplative Reptile"
+                    title={product.title}
                 />
                 <CardContent className={classes.content}>
                     <Typography gutterBottom variant="h5" component="h2">

@@ -4,6 +4,7 @@ import {aboutCompany} from "../../repository/about-company-repository";
 import {color} from "../../constants-style";
 import {RouteComponentProps} from "react-router";
 import {withRouter} from "react-router-dom";
+import Helmet from "react-helmet";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -48,8 +49,22 @@ const About: FC<RouteComponentProps> = (props) => {
 
 
     return <div className={classes.root}>
+        <Helmet
+            htmlAttributes={{"lang": "en", "amp": undefined}} // amp takes no value
+            title="О компании"
+            titleTemplate="Krep Service - %s"
+            defaultTitle="Krep Service"
+            base={{"target": "_blank", "href": "https://krepservice.kz/"}}
+            meta={[
+                {"name": "description", "content": "Магазин крепежных материалов, в Атырау, Крепежи, болты, гайки, саморезы, шурупы, такелаж "},
+                {"property": "og:type", "content": "Крепежи, болты, гайки, саморезы, шурупы, такелаж"}
+            ]}
+            link={[
+                {"rel": "Крепеж", "href": "https://krepservice.kz/"},
+            ]}
+        />
         <div className={classes.title}>
-            <span style={{color: 'black', fontSize: 18}}>О Компании</span>
+            <h1 style={{color: 'black', fontSize: 18}}>О Компании</h1>
         </div>
         <div className={classes.paragraph}>
             <span

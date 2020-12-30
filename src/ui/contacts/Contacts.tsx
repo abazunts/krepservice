@@ -9,6 +9,7 @@ import shop1 from "../../assets/address/shop1.jpg";
 import shop2 from "../../assets/address/shop2.jpg";
 import { withRouter } from 'react-router-dom';
 import {RouteComponentProps} from "react-router";
+import Helmet from "react-helmet";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -84,8 +85,22 @@ const Contacts: FC<RouteComponentProps> = (props) => {
 
 
     return <div className={classes.root}>
+        <Helmet
+            htmlAttributes={{"lang": "en", "amp": undefined}} // amp takes no value
+            title="Контакты"
+            titleTemplate="Krep Service - %s"
+            defaultTitle="Krep Service"
+            base={{"target": "_blank", "href": "https://krepservice.kz/"}}
+            meta={[
+                {"name": "description", "content": "Магазин крепежных материалов, в Атырау, Крепежи, болты, гайки, саморезы, шурупы, такелаж"},
+                {"property": "og:type", "content": "Крепежи, болты, гайки, саморезы, шурупы, такелаж"}
+            ]}
+            link={[
+                {"rel": "Крепеж", "href": "https://krepservice.kz/"},
+            ]}
+        />
         <div className={classes.title}>
-            <span style={{color: 'black', fontSize: 18}}>Контакты</span>
+            <h1 style={{color: 'black', fontSize: 18}}>Контакты</h1>
         </div>
         <div className={classes.wrapperContacts}>
             <div style={{marginBottom: 20, marginRight: 20}}>
@@ -104,7 +119,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                 </div>
                 <div>
                     <div className={classes.helpText}>Нажмите, чтобы открыть карту</div>
-                    <a href={'https://go.2gis.com/4s9hw'} target={'_blank'}> <img src={shop2} className={classes.wrapperAddress}/></a>
+                    <a href={'https://go.2gis.com/4s9hw'} target={'_blank'}> <img src={shop2} className={classes.wrapperAddress} alt={'Krep Service'}/></a>
                 </div>
             </div>
             <div style={{marginBottom: 20}}>
@@ -123,7 +138,7 @@ const Contacts: FC<RouteComponentProps> = (props) => {
                 </div>
                 <div>
                     <div className={classes.helpText}>Нажмите, чтобы открыть карту</div>
-                    <a href={'https://go.2gis.com/6nmnk'} target={'_blank'}><img src={shop1} className={classes.wrapperAddress}/></a>
+                    <a href={'https://go.2gis.com/6nmnk'} target={'_blank'}><img src={shop1} className={classes.wrapperAddress} alt={'Krep Service'}/></a>
                 </div>
             </div>
         </div>
